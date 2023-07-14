@@ -1,0 +1,89 @@
+/* Thiết lập cho phần tử */
+.bounce {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: bounce 0.5s infinite; /* Thêm hiệu ứng nhúng nhảy */
+  }
+  
+  /* Định nghĩa keyframe cho hiệu ứng nhúng nhảy */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Không di chuyển */
+    }
+    50% {
+      transform: translateY(-10px); /* Di chuyển lên */
+    }
+    100% {
+      transform: translateY(0); /* Trở về vị trí ban đầu */
+    }
+  }
+  @keyframes shake {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(1); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  /* Thiết lập cho phần tử */
+#resizable {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Thêm hiệu ứng chuyển động */
+  }
+  /* Thiết lập kích thước cho phần tử khi nhỏ */
+#resizable.small {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Thiết lập kích thước cho phần tử khi lớn */
+  #resizable.big {
+    width: 200px;
+    height: 200px;
+  }
+  /* Thiết lập cho phần tử */
+#input-field {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out; /* Thêm hiệu ứng chuyển động */
+  }
+  input[type="text"]{
+    background-color: #007bff;
+  }
+  /* Thiết lập nền cho phần tử khi không được nhập vào */
+  #input-field:not(:focus) {
+    background-color: #4c0c0c;
+  }
+  
+  /* Thiết lập nền cho phần tử khi được nhập vào */
+  #input-field:focus {
+    background-color: #007bff;
+    color: #fff;
+  }
+  /* Thiết lập nền cho phần tử khi được nhập vào */
+#input-field.active {
+    background-color: #007bff;
+    color: #fff;
+  }

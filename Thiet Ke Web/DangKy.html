@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Mở</title>
+    <link rel="stylesheet" href="dangky.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/LogoMenu.png" alt="Trường Đại học XYZ"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <!-- <i class="fa fa-university" aria-hidden="true"></i> -->
+                        <li><a href="index.html"><span class="material-icons">home</span>Trang Chủ</a></li>
+                        <!-- <i class="fa fa-server" aria-hidden="true"></i> -->
+                        <li><a href="GioiThieu.html"><span class="material-icons">description</span>Giới Thiệu</a></li>
+                        <!-- <i class="fa fa-graduation-cap" aria-hidden="true" ></i> -->
+                        <li><a href="#"><span class="material-icons">library_books</span>Chương Trình Đào Tạo</a></li>
+                        <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
+                        <li><a href="#"><span class="material-icons">diversity_3</span>Đối Tác</a></li>
+                        <!-- <i class="fa fa-qrcode" aria-hidden="true"></i> -->
+                        <li><a href="#"><span class="material-icons">forward_to_inbox</span>Liên Hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <h1>Trường Đại học Mở TP.HCM</h1>
+                <p>Trường Đại học Mở là trường đại học hàng đầu tại Việt Nam với nhiều chương trình đào tạo và hoạt động
+                    nghiên cứu tích cực.</p>
+                <a href="#" class="btn">Xem Thêm</a>
+            </div>
+        </div>
+    </section>
+    <section class="apply">
+        <div class="container">
+            <div class="apply-img">
+                <img src="http://hluv.edu.vn/media/68/t68269.jpg" alt="dangki">
+            </div>
+            <div class="apply-table">
+                <h1>Đăng ký vào trường đại học</h1>
+                <form>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="gender">Giới tính:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">--Chọn giới tính--</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+
+                    <label for="address">Địa chỉ:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <label for="major">Ngành học:</label>
+                    <select id="major" name="major" required>
+                        <option value="">--Chọn ngành học--</option>
+                        <option value="IT">Công nghệ thông tin</option>
+                        <option value="Business">Kinh doanh</option>
+                        <option value="Law">Luật</option>
+                        <option value="Medicine">Y khoa</option>
+                    </select>
+
+                    <!-- <label for="degree">Bậc học:</label>
+		<input type="radio" id="bachelor" name="degree" value="bachelor" checked>
+		<label for="bachelor">Đại học</label>
+		<input type="radio" id="master" name="degree" value="master">
+		<label for="master">Thạc sĩ</label>
+		<input type="radio" id="phd" name="degree" value="phd">
+		<label for="phd">Tiến sĩ</label> -->
+
+                    <label for="resume">Sơ yếu lý lịch:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                    <label for="transcript">Bảng điểm:</label>
+                    <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx" required>
+
+                    <button  type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Trường Đại học Mở TP.HCM</h3>
+                    <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                </div>
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.041172795622!2d106.6979085147381!3d10.773981292322371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2b7a62b139%3A0x8b6a3e0b845da6f5!2zUXXhu5FjIFbEg25nIFZpbG5hbQ!5e0!3m2!1svi!2s!4v1625799843458!5m2!1svi!2s"
+                        width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script>
+        // Lấy tham chiếu đến nút
+        var submitButton = document.getElementById("submit-button");
+
+        // Thêm sự kiện click cho nút
+        submitButton.addEventListener("click", function () {
+            // Thêm lớp "clicked" để kích hoạt hiệu ứng nhấp nháy
+            submitButton.classList.add("clicked");
+
+            // Sau 0.5 giây, loại bỏ lớp "clicked" để trở về trạng thái ban đầu
+            setTimeout(function () {
+                submitButton.classList.remove("clicked");
+            }, 500);
+        });
+    </script> -->
+</body>
+
+</html>

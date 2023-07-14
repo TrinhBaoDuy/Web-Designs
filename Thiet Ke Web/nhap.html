@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Liên hệ - Trường Đại học Mở</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="bounce">Hello, world!</div>
+	<div id="resizable">Hello, world!3333333333</div>
+	<label for="input-field">Enter your name:</label>
+	<input type="text" id="input-field">
+	<label for="resume" class="file-label">
+		<span class="file-icon"><i class="fas fa-upload"></i></span>
+		<span class="file-selected"><i class="fas fa-check"></i></span>
+		Sơ yếu lý lịch:
+	</label>
+	<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+</body>
+<script>
+	// Lấy tham chiếu đến phần tử
+	var resizable = document.getElementById("resizable");
+
+	// Thêm sự kiện click cho phần tử
+	resizable.addEventListener("click", function () {
+		// Thay đổi kích thước phần tử
+		if (resizable.classList.contains("small")) {
+			resizable.classList.remove("small");
+			resizable.classList.add("big");
+		} else {
+			resizable.classList.remove("big");
+			resizable.classList.add("small");
+		}
+	});
+	// Lấy tham chiếu đến phần tử
+	var inputField = document.getElementById("input-field");
+
+	// Thêm sự kiện focus và blur cho phần tử
+	inputField.addEventListener("focus", function () {
+		// Thay đổi lớp CSS của phần tử khi được nhập vào
+		inputField.classList.add("active");
+	});
+
+	inputField.addEventListener("blur", function () {
+		// Thay đổi lớp CSS của phần tử khi không được nhập vào
+		inputField.classList.remove("active");
+	});
+</script>
+
+</html>
