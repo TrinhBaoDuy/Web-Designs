@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/LogoMenu.png" alt="Trường Đại học XYZ"></a>
+                <a href="#"><img src="/images/LogoMenu.png" alt="Trường Đại học XYZ"></a>
             </div>
             <div class="menu">
                 <nav>
@@ -21,7 +21,8 @@
                         <!-- <i class="fa fa-university" aria-hidden="true"></i> -->
                         <li><a href="/HTML/index.html"><span class="material-icons">home</span>Trang Chủ</a></li>
                         <!-- <i class="fa fa-server" aria-hidden="true"></i> -->
-                        <li><a href="/HTML/GioiThieu.html"><span class="material-icons">description</span>Giới Thiệu</a></li>
+                        <li><a href="/HTML/GioiThieu.html"><span class="material-icons">description</span>Giới Thiệu</a>
+                        </li>
                         <!-- <i class="fa fa-graduation-cap" aria-hidden="true" ></i> -->
                         <li><a href="#"><span class="material-icons">library_books</span>Chương Trình Đào Tạo</a></li>
                         <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
@@ -46,7 +47,7 @@
     <section class="apply">
         <div class="container">
             <div class="apply-img">
-                <img src="http://hluv.edu.vn/media/68/t68269.jpg" alt="dangki">
+                <img src="/images/tuyensinh.jpg" alt="dangki" style="height: 70%;">
             </div>
             <div class="apply-table">
                 <h1>Đăng ký vào trường đại học</h1>
@@ -94,12 +95,51 @@
                     <label for="transcript">Bảng điểm:</label>
                     <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx" required>
 
-                    <button  type="submit">Đăng ký</button>
+                    <button type="submit">Đăng ký</button>
                 </form>
             </div>
         </div>
+        <script src="/JAVASCRIPT/dangkythanhcong.js"></script>
     </section>
-
+    
+    <section class="table">
+        <h3>Bảng điểm xét tuyển đầu vào TRƯỜNG ĐẠI HỌC MỞ TP.HCM</h3>
+        <table>
+            <thead>
+              <tr>
+                <th>Ngành</th>
+                <th>Số chỉ tiêu</th>
+                <th>Điểm chuẩn</th>
+                <th>Điểm trúng tuyển năm trước</th>
+                <th>Chứng chỉ ngoại ngữ</th>
+              </tr>
+            </thead>
+            <tbody class="diemnganh">
+              <tr>
+                <td>Khoa học máy tính</td>
+                <td>100</td>
+                <td>28.5</td>
+                <td>29.0</td>
+                <td>Có</td>
+              </tr>
+              <tr>
+                <td>Công nghệ thông tin</td>
+                <td>120</td>
+                <td>27.5</td>
+                <td>28.0</td>
+                <td>Có</td>
+              </tr>
+              <tr>
+                <td>Kỹ thuật điện tử viễn thông</td>
+                <td>80</td>
+                <td>29.0</td>
+                <td>28.5</td>
+                <td>Có</td>
+              </tr>
+              <script src="/JAVASCRIPT/napdiem.js"></script>
+            </tbody>
+          </table>
+    </section>
     <footer>
         <div class="foot">
             <div class="row">
@@ -115,21 +155,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
-        // Lấy tham chiếu đến nút
-        var submitButton = document.getElementById("submit-button");
-
-        // Thêm sự kiện click cho nút
-        submitButton.addEventListener("click", function () {
-            // Thêm lớp "clicked" để kích hoạt hiệu ứng nhấp nháy
-            submitButton.classList.add("clicked");
-
-            // Sau 0.5 giây, loại bỏ lớp "clicked" để trở về trạng thái ban đầu
-            setTimeout(function () {
-                submitButton.classList.remove("clicked");
-            }, 500);
-        });
-    </script> -->
 </body>
 
 </html>
