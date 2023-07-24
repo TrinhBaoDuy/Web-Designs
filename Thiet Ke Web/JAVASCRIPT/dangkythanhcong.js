@@ -67,7 +67,10 @@ submitButton.addEventListener('click', (event) => {
         form.reset();
 
         // Cuộn trang web để đảm bảo phần tử được chọn được hiển thị trên màn hình
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // successMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var elementPosition = successMessage.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + 200;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
     } else {
         alert('Bạn chưa nhập đủ thông tin!');
     }
