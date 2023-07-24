@@ -1,15 +1,17 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1rem; /* 16px */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 :root {
-  --fontColer : #2b94df;
+  --fontColer : #094183;;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-size: 15px;
   line-height: 1.6; /*tao khoảng cách giauwx các phần tử */
   color: #333;
@@ -29,82 +31,93 @@ a {
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 /* header styles */
 header {
-  background-color: var(--fontColer);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /*đổ bóng sẽ có màu đen với độ mờ là 5px, và sẽ được đặt ở vị trí 2px phía dưới và 0px phía ngang của phần header.*/
-  /* position: fixed; /*cố định menu* */
-  top: 0;
-  width: 100%;
-  height: 70px;
-  /* z-index: 999; /*độ ưu tiên cao nhất */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--fontColer);
+	min-height: 96px;
+	display: flex;
+    justify-content: space-between;
+	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.4);
+	z-index: 99;
+  transition: transform 2s ease-in-out;
+}
+header.hidden {
+  transform: translateY(-50px);
+}
+div.logo > img {
+	
 }
 
-.logo {
-  margin-right: auto;
-  margin-top: 15px;
+nav {
+	display: flex;
+    align-items: center;
 }
 
-.logo a img {
-  height: 50%;
-  width: auto;
+ul.menu {
+	display: flex;
 }
 
-.menu {
-  float: right;
-  margin-top: 5px;
+ul.menu li {
+	display: block;
+	margin-right: 1.6rem;
+	font-size: 1.4rem;
 }
 
-nav ul {
-  list-style: none;
- 
+/* Bi thay doi height cua ul khi hover cac li => problem ? */
+/* ul.menu li:hover {
+	border-bottom: 2px solid #fff;
+} */
+
+i.icon-style {
+	color: #fff;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-top: 10px;
-  border-left: 2px solid #fff;
-  padding: 0 15px;
-  height: auto;
-  font-size: 11px;
-}
-nav ul li span.material-icons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 8px;
+ul.menu > li > a {
+	text-decoration: none;
+	color: #fff;
 }
 
-nav ul li a {
- 
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  color: #fff;
-  text-shadow: 2px 2px 3px #07135a;
-}
+div.search-icon {
+	padding: 1rem 0.8rem;
+} 
 
-nav ul li a:hover {
-  color: #035691;
+.search-icon > a > i {
+	font-size: 1.5rem;
+    color: #fff;
+	margin-top: 1.5rem;
 }
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* banner styles */
 .banner {
-  /* background: url('images/truong-dai-hoc-mo.webp') no-repeat center center; */
-  background: #035691;
+  background: url('../images/university.gif') no-repeat center center;
+  /* background: #035691; */
   background-size: cover;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* animation: slidein 3s infinite; */
 }
+
+/* @keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+} */
 
 .banner-text {
   max-width: 600px;
   margin: 0 auto;
-  color: #fff;
+  color: #f2f2f2;
   text-shadow: 3px 3px 6px #07135a;
 }
 
@@ -398,103 +411,68 @@ hr.thanhnho{
   }
 } */
 /* footer styles */
+.col-23per {
+  width: 23% !important;
+}
+.col-30per {
+  width: 30% !important;
+}
 footer {
-  background-color: #333;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  padding: 50px 0;
+	height: 100vh;
+	background-color: var(--fontColer) !important;
+} 
+
+.container-footer {
+	width: 95%;
+	margin: 0 auto;
 }
 
-.foot {
-  max-width: 1200px;
-  margin: 0 auto;
+.container-footer span {
+	margin-left: 0.5rem;
 }
 
-.foot h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.top-footer {
+	display: flex;
+	padding: 6rem 0 3rem 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.foot p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-div.foot div.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-}
-div.foot div.row .col-4{
-  flex: 0 0 29%;
-  max-width: 30%;
-  padding: 0 1%;
-}
-#map {
-  flex: 0 0 69%;
-  max-width: 1000px;
-
-
-  /* #autotop-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-  } */
-  
-  /* #autotop-btn:hover {
-    opacity: 1;
-  } */
-/* @media screen and (max-width: 768px) {
-  .col-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-} */
-/* responsive styles */
-/* @media screen and (max-width: 768px) {
-  .menu {
-      display: none;
-  }
-
-  nav {
-      padding-top: 20px;
-  }
-
-  .logo {
-      float: none;
-      text-align: center;
-  }
-
-  .banner-text h1 {
-      font-size: 36px;
-  }
-
-  .icon {
-      margin: 0 auto 30px;
-  }
+.top-footer > div:first-child img {
+	width: 100%;
 }
 
-@media screen and (max-width: 576px) {
-  .banner-text h1 {
-      font-size: 30px;
-  }
-
-  .feature-box h3 {
-      font-size: 20px;
-  }
-
-  .course-box h3 {
-      font-size: 20px;
-  }
-
-  footer p {
-      font-size: 14px;
-  }
-
-  footer h3 {
-      font-size: 24px;
-  } */
+.top-footer-contact, .top-footer-contact a, .top-footer-contact i, .top-footer-contact span {
+	color: #fff;
 }
+
+.top-footer-contact a:hover {
+	color: #797a97;
+}
+
+.top-footer-contact p {
+	margin: 0.5rem 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.mid-footer {
+	padding: 4rem 0 2rem 0;
+	border-bottom: 1px solid #fff;
+}
+
+.mid-footer div:first-child {
+	padding-left: 18px;
+}
+
+.bottom-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottom-footer h3, .bottom-footer p {
+	color: #fff;
+	font-weight: normal;
+} 
