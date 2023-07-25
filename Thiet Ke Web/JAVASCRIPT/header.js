@@ -29,7 +29,7 @@ header.innerHTML = `
 				<a href=""> <i class="fas fa-search icon-style"></i></a>
 			</div>
 `;
-const style = `
+const styleheader = `
 header {
 	position: fixed;
 	top: 0;
@@ -86,6 +86,6 @@ div.search-icon {
 	margin-top: 1.5rem;
 }
   `
-document.head.insertAdjacentHTML('beforeend', `<style>${style}</style>`);
+document.head.insertAdjacentHTML('beforeend', `<style>${styleheader}</style>`);
 header.classList.add('your-header-class');
 document.body.append(header);

@@ -33,14 +33,13 @@ const data = [
 const diem_load = data.map(d => {
     return `
         <tr>
-                <td>${d.name}</td>
-                <td>${d.sochitieu}</td>
-                <td>${d.diemchuan}</td>
-                <td>${d.diemdau}</td>
-                <td>${d.chungchi}</td>
-              </tr>
-        </div>
+            <td>${d.name}</td>
+            <td>${d.sochitieu}</td>
+            <td>${d.diemchuan}</td>
+            <td>${d.diemdau}</td>
+            <td>${d.chungchi}</td>
+        </tr>
         `
 })
-$('.diemnganh').innerHTML += diem_load.join('');
+// $('.diemnganh').innerHTML += diem_load.join('');
 

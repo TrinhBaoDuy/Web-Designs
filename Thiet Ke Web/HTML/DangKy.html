@@ -9,40 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="../JAVASCRIPT/scriptchung.js"></script> -->
+    <script src="../JAVASCRIPT/napdiem-test.js"></script>
 </head>
 
-<body>
+<body onload="napdiemtest()">
+	<script src="../JAVASCRIPT/header.js"></script>
     
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="../images/LogoMenu.png" alt="logo">
-            </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
-                    <a href="#">Trang Chủ</a>
-                </li>
-                <li>
-                    <span><i class="fa-solid fa-users icon-style"></i></span>
-                    <a href="#">Giới Thiệu</a>
-                </li>
-                <li>
-                    <span><i class="fa-solid fa-user-graduate icon-style"></i></span>
-                    <a href="#">Chương Trình Đào Tạo</a>
-                </li>
-                <li>
-                    <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
-                    <a href="#">Liên Hệ</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="search-icon">
-            <a href=""> <i class="fas fa-search icon-style"></i></a>
-        </div>
-    </header>
     <section class="banner">
         <div class="container">
             <div class="banner-text">
@@ -123,7 +95,7 @@
                 <th>Chứng chỉ ngoại ngữ</th>
               </tr>
             </thead>
-            <tbody class="diemnganh">
+            <tbody id="napdiem" class="diemnganh">
               <tr>
                 <td>Khoa học máy tính</td>
                 <td>100</td>
@@ -145,7 +117,7 @@
                 <td>28.5</td>
                 <td>Có</td>
               </tr>
-              <script src="/JAVASCRIPT/napdiem.js"></script>
+              <!-- <script src="/JAVASCRIPT/napdiem.js"></script> -->
             </tbody>
           </table>
     </section>
