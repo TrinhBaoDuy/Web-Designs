@@ -11,7 +11,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- <script src="../JAVASCRIPT/scriptchung.js"></script> -->
 </head>
 
@@ -236,7 +236,27 @@
 						</p>
 					</div>
 					<div class="col-6">
-						<img src="../images/truong-dai-hoc-mo.webp" alt="Giới Thiệu Về Trường Đại học XYZ">
+						<div class="slideshow-container">
+							<div class="slideshow">
+								<div class="slide">
+									<img src="../images/gioithieu1.jpg">
+								</div>
+								<div class="slide">
+									<img src="../images/gioithieu2.jpg">
+								</div>
+								<div class="slide">
+									<img src="../images/gioithieu3.jpg">
+								</div>
+								<div class="slide">
+									<img src="../images/gioithieu4.jpg">
+								</div>>
+								<div class="slide">
+									<img src="../images/gioithieu5.jpg">
+								</div>
+							</div>
+							<a class="prev"><i class="fas fa-chevron-left"></i></a>
+							<a class="next"><i class="fas fa-chevron-right"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -315,7 +335,7 @@
 				<div class="row">
 					<div class="col-3">
 						<div class="partner-box">
-							<img src="../images/FPT.png" alt="Đối Tác FPT">
+							<img src="../images/FPT.png" alt="Đối Tác 1">
 							<p>Tập đoàn FPT: Đại học Mở TP.HCM và FPT đã ký kết thỏa thuận hợp tác trong lĩnh vực đào
 								tạo và
 								phát triển nguồn nhân lực về công nghệ thông tin.</p>
@@ -323,7 +343,7 @@
 					</div>
 					<div class="col-3">
 						<div class="partner-box">
-							<img src="../images/FPT.png" alt="Đối Tác FPT">
+							<img src="../images/doitac2.jpg" alt="Đối Tác 2">
 							<p>Tập đoàn FPT: Đại học Mở TP.HCM và FPT đã ký kết thỏa thuận hợp tác trong lĩnh vực đào
 								tạo và
 								phát triển nguồn nhân lực về công nghệ thông tin.</p>
@@ -331,7 +351,7 @@
 					</div>
 					<div class="col-3">
 						<div class="partner-box">
-							<img src="../images/FPT.png" alt="Đối Tác FPT">
+							<img src="../images/doitac3.jpg" alt="Đối Tác 3">
 							<p>Tập đoàn FPT: Đại học Mở TP.HCM và FPT đã ký kết thỏa thuận hợp tác trong lĩnh vực đào
 								tạo và
 								phát triển nguồn nhân lực về công nghệ thông tin.</p>
@@ -364,9 +384,48 @@
 				// text[index].style.opacity = "0";
 			}
 		}
-		// trước tới foter thì header mất 
-		// const btn = document.querySelectorAll(div.courses .btn);
-		// btn.classList.add('show');
+
+		$(document).ready(function () {
+			var slideshowContainer = $('.slideshow-container');
+			var slideshow = $('.slideshow');
+			var slides = $('.slide');
+			var prev = $('.prev');
+			var next = $('.next');
+			var slideIndex = 0;
+			var slideCount = slides.length;
+			var timeoutId;
+
+			function showSlides() {
+				slideIndex++;
+				if (slideIndex > slideCount) {
+					slideIndex = 1;
+				}
+				slideshow.css('transform', 'translateX(' + -(slideIndex - 1) * 20 + '%)');
+				timeoutId = setTimeout(showSlides, 5000);
+			}
+
+			showSlides();
+
+			prev.click(function () {
+				slideIndex--;
+				if (slideIndex < 1) {
+					slideIndex = slideCount;
+				}
+				slideshow.css('transform', 'translateX(' + -(slideIndex - 1) * 20 + '%)');
+				clearTimeout(timeoutId);
+				timeoutId = setTimeout(showSlides, 5000);
+			});
+
+			next.click(function () {
+				slideIndex++;
+				if (slideIndex > slideCount) {
+					slideIndex = 1;
+				}
+				slideshow.css('transform', 'translateX(' + -(slideIndex - 1) * 20 + '%)');
+				clearTimeout(timeoutId);
+				timeoutId = setTimeout(showSlides, 5000);
+			});
+		});
 	</script>
 </body>
 

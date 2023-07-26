@@ -8,7 +8,8 @@
 }
 
 :root {
-    --fontColer: #094183;;
+    --fontColer: #094183;
+    --coursesColor: #edf2f5;
 }
 
 body {
@@ -444,3 +445,42 @@ button[type="submit"]:hover {
   tr:hover {
     background-color: #ddd;
   }
+  /* --------------------------------------------------------------- */
+  div#content div.courses {
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+    padding: 56px 0;
+	background-color: var(--coursesColor);
+}
+
+div#content div.course {
+	padding-left: 1.33333rem;
+	padding-right: 1.33333rem;
+	display: flex;
+	flex-direction: column;
+}
+
+a.name-course {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #c4c8ca;
+    padding-top: 16px;
+}
+
+a.name-course h2 {
+	font-size: 1.3rem;
+	color: var(--fontColer);
+	min-height: 63px;
+}
+
+a.name-course span.arrow-course {
+	border-radius: 50%;
+    padding: 6px 10px;
+    color: var(--fontColer);
+}
+
+div#content  div.courses .desc-course {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}

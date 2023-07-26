@@ -66,11 +66,16 @@ submitButton.addEventListener('click', (event) => {
 
         form.reset();
 
-        // Cuộn trang web để đảm bảo phần tử được chọn được hiển thị trên màn hình
-        // successMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        var elementPosition = successMessage.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + 200;
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        // Tính toán vị trí của phần tử successMessage
+        const successMessageclass = document.querySelector('.success-message');
+        const elementPosition = successMessageclass.getBoundingClientRect().top;
+
+        // Tính toán offset bằng kích thước của phần tử header
+        const header = document.querySelector('header');
+        const offset = header.offsetHeight;
+
+        // Cuộn trang web đến vị trí của phần tử successMessage với offset
+        window.scrollTo({ top: elementPosition + window.scrollY - offset - 100, behavior: 'smooth' });
     } else {
         alert('Bạn chưa nhập đủ thông tin!');
     }
