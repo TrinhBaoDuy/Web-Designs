@@ -21,7 +21,7 @@ header.innerHTML = `
 					</li>
 					<li>
 						<span><i class="fa-solid fa-phone-volume icon-style"></i></span>
-						<a href="#">Liên Hệ</a>
+						<a href="../HTML/lienhe.html">Liên Hệ</a>
 					</li>
 				</ul>
 			</nav>

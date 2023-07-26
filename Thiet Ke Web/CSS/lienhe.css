@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    /* 16px */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+:root {
+    --fontColer: #094183;
+    --coursesColor: #edf2f5;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 15px;
+    line-height: 1.6;
+    /*tao khoảng cách giauwx các phần tử */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    /*bỏ gạch chân*/
+    color: #333;
+}
+
+.container {
+    /* max-width: 1300px; */
+    margin: 0 10%;
+    /*trên dưới 0 , trái phải auto */
+    padding: 0 20px;
+    display: flex;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* header styles */
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* banner styles */
+.banner {
+    /* background: url('images/truong-dai-hoc-mo.webp') no-repeat center center; */
+    background: #035691;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-text {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 3px 3px 6px #07135a;
+}
+
+.banner-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.banner-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--fontColer);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--fontColer);
+    border: 1px solidvar(--fontColer);
+    text-shadow: none;
+}
+
+/* -------------------------------------- */
+/* phần bức thư */
+.mess{
+    width: 40%;
+    background-color: #a6c0d3;
+}
+
+.input-container {
+    position: relative;
+    margin: 40px 2%;
+    /* max-width: 500px; */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+input[type="text"]:focus+label,
+input[type="text"]:valid+label {
+    top: -10px;
+    transform: translateY(0%);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--fontColer);
+    /* box-shadow:  10px 10px 10px var(--coursesColor); */
+}
+
+input[type="submit"] {
+    background-color: var(--fontColer);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #035691;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+label[for="email"] {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+input[type="email"]:focus+label,
+input[type="email"]:valid+label {
+    top: -10px;
+    transform: translateY(0%);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--fontColer);
+}
+.input-container textarea {
+  width: 100%;
+}
