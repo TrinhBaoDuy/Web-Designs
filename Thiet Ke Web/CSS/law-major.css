@@ -218,7 +218,7 @@ div.info-major-item h3 {
 }
 
 div.info-major-item p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -311,7 +311,7 @@ div.special-content:hover h3.h::after {
 }
 
 .section-left p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     margin: 20px 0;
 }
@@ -426,9 +426,9 @@ div.special-content:hover h3.h::after {
     width: 100%;
 }
 
-a.register-btn-major {
+a.register-btn-major.law-regis {
 	display: block;
-    margin-top: 28px;
+    margin-top: 3rem;
     padding: 10px 24px;
     background-color: #d72134;
     border-radius: 4px;

@@ -41,6 +41,10 @@
 	width: 50% !important;
 }
 
+.col-60per {
+	width: 60% !important;
+}
+
 .col-70per {
 	width: 70% !important;
 }
@@ -218,7 +222,7 @@ div.info-major-item h3 {
 }
 
 div.info-major-item p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -311,7 +315,7 @@ div.special-content:hover h3.h::after {
 }
 
 .section-left p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     margin: 20px 0;
 }
@@ -424,11 +428,12 @@ div.special-content:hover h3.h::after {
 
 .quote-right img {
     width: 100%;
+    height: 99%;
 }
 
 a.register-btn-major {
 	display: block;
-    margin-top: 28px;
+    margin-top: 3rem;
     padding: 10px 24px;
     background-color: #d72134;
     border-radius: 4px;
@@ -437,7 +442,7 @@ a.register-btn-major {
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
-	max-width: 34%;
+	max-width: 40%;
     transition: all .15s ease-in-out;
 }
 
@@ -448,6 +453,65 @@ a.register-btn-major:hover {
 a.register-btn-major > span {
 	margin-left: 8px;
 }
+
+
+/* ============ PARTNER COMPANY =============== */
+#partner-container {
+    padding: 3rem 0;
+}
+
+.partner-company {
+    width: 91%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* List companies logo */
+ul.partner-companies-logo {
+    margin-top: 1rem;
+    animation:  move 8s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-25%);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-68%);
+    }
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+ul.partner-companies-logo::-webkit-scrollbar {
+    display: none; /* hide scroll bar at Companies Logo, but still can scroll  */
+}
+
+ul.partner-companies-logo > li.company-logo {
+    margin: 0 2rem;
+    object-fit: contain;
+    width: 300px;
+}
+
+ul.partner-companies-logo > li.company-logo img {
+    width: 150px;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+
+.partner-company h2 {
+    font-size: var(--fontSize-Heading);
+    letter-spacing: 1px;
+}
+
 
 
 /* Contact */
