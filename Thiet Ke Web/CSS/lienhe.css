@@ -135,17 +135,20 @@ input[type="text"]:valid+label {
     /* box-shadow:  10px 10px 10px var(--coursesColor); */
 }
 
-input[type="submit"] {
+.mess button {
     background-color: var(--fontColer);
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    width: 35%;
+    margin-left: 120px;
 }
 
-input[type="submit"]:hover {
+.mess button:hover {
     background-color: #035691;
+    border-radius: 100px;
 }
 
 h1 {
@@ -211,20 +214,121 @@ input[type="email"]:valid+label {
 
 
 /* Câu hỏi thường gặp */
-.ques-item .ans {
-    display: none;
-    /* opacity: 0; */
-    /* max-height: 0; */
-    /* transition: opacity 1s ease-in-out; */
+.section-ques h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
 }
 
-/* ans.show {
-    opacity: 1;
-  .  max-height: 200px;
-} */
+.section-ques .ques-item .ans {
+    /* display: none; */
+    max-height: 0;
+    opacity: 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
 
-.section-ques h2 {
-    font-size: 2rem;
+.section-ques .ques-item .ans.show {
+    /* display: block; */
+    max-height: 200px;
+    opacity: 1;
+}
+
+.section-ques .ques-item {
+    position: relative;
+    cursor: pointer;
+    margin: 22px;
+}
+
+.section-ques .ques-item .arrow-circle {
+    position: absolute;
+    right: 0;
+    /* cursor: pointer; */
+    transition: transform 0.5s ease;
+}
+
+.section-ques .ques-item .arrow-circle i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.5s ease;
+}
+
+.section-ques .ques-item .arrow-circle i.rotate {
+    transform: rotate(180deg);
+}
+
+.img-intro {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.img-intro>img {
+    height: 300px;
+    width: 100%;
+    background: rgba(27, 4, 4, 0.3);
+    opacity: 0.3;
+
+}
+
+.it-major-header {
+    position: absolute;
+    top: 180%;
+    left: 4%;
+}
+
+.it-major-header h2 {
+    color: var(--fontColer);
+    font-size: 68px;
     letter-spacing: 1px;
-    margin: 1rem 0;
+    text-shadow: 0 1px black;
+}
+
+.it-major-header p {
+    color: var(--fontColer);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 1px black;
+    font-style: italic;
+}
+
+/* mấy cái đia chỉ */
+.container-adress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10%;
+    /*trên dưới 0 , trái phải auto */
+    padding: 0 20px;
+}
+
+.adress-items {
+    width: 47%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.adress-item {
+    
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.district {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.map {
+    margin-top: 10px;
+    /* height: 20px; */
 }

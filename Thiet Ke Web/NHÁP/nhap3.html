@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="mess">
+        <div>
+            <h1>Chúng tôi rất vui lòng được hỗ trợ bạn. Vui lòng hoàn thành thông tin & đặt câu hỏi ở dưới</h1>
+        </div>
+        <div class="input-container">
+            <input type="text" id="name" name="name" required />
+            <label for="name">Tên của bạn:</label>
+        </div>
+        <div class="input-container">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email của bạn:</label>
+        </div>
+        <div class="input-container">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Nội dung:</label>
+        </div>
+        <div class="input-container">
+            <button id="submit-btn">Gửi</button>
+        </div>
+        <div class="success-message" style="display: none;">
+            <p>Thư của bạn đã được gửi đến trường thành công!</p>
+            <button id="write-again">Viết thư mới</button>
+        </div>
+    </section>
+</body>
+<script>
+    const submitButton = document.getElementById('submit-btn');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const successMessage = document.querySelector('.success-message');
+const writeAgainButton = document.querySelector('#write-again');
+
+submitButton.addEventListener('click', function(event) {
+    // Ngăn chặn hành vi mặc định của trình duyệt khi nhấn nút Gửi
+    event.preventDefault();
+
+    // Kiểm tra các trường biểu mẫu có được điền đầy đủ thông tin hay không
+    if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+        alert('Vui lòng điền đầy đủ thông tin trước khi gửi thư!');
+        return;
+    }
+
+    // Gửi thư bằng Ajax hoặc hình thức khác tùy thuộc vào nhu cầu của bạn
+
+    // Hiển thị phần tử mới
+    successMessage.style.display = 'block';
+});
+
+writeAgainButton.addEventListener('click', function() {
+    // Ẩn phần tử mới và quay lại biểu mẫu ban đầu
+    successMessage.style.display = 'none';
+
+    // Xóa nội dung của các trường biểu mẫu để có thể viết thư mới
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+});
+</script>
+</html>

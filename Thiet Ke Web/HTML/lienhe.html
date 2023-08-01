@@ -11,7 +11,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="../JAVASCRIPT/scriptchung.js"></script> -->
-    <script src="../JAVASCRIPT/napcauhoi.js"></script>
+    <script src="../JAVASCRIPT/lienhe.js"></script>
 </head>
 
 <body onload="napcauhoi()">
@@ -28,7 +28,7 @@
         </div>
     </section>
     <main class="container">
-        <section class="mess">
+        <section class="mess" onload="guithu()">
             <div>
                 <h1>Chúng tôi rất vui lòng được hỗ trợ bạn. Vui lòng hoàn thành thông tin & đặt câu hỏi ở dưới</h1>
             </div>
@@ -45,7 +45,11 @@
                 <label for="message">Nội dung:</label>
             </div>
             <div class="input-container">
-                <input type="submit" value="Gửi" />
+                <button id="submit-btn">Gửi</button>
+            </div>
+            <div class="success-message" style="display: block;">
+                <p>Thư của bạn đã được gửi đến trường thành công!</p>
+                <button id="write-again">Viết thư mới</button>
             </div>
         </section>
         <section class="container-question">
@@ -63,42 +67,28 @@
                             chuyên ngành mong muốn học, v.v.</div>
                     </div>
                     <div class="ques-item">
-                        <div class="ques">Hồ sơ sét tuyển vào trường cần những gì ?
+                        <div class="ques">Tôi nên đăng ký những môn học nào vào học kỳ đầu tiên?
                             <span class="arrow-circle">
                                 <i class="fa-solid fa-plus"></i>
                             </span>
                         </div>
-                        <div class="ans">Phiếu đăng ký xét tuyển: Đây là một biểu mẫu đơn giản cung cấp thông tin cơ bản
-                            về thí sinh như họ tên, địa chỉ, số điện thoại, thông tin về trường học đã tốt nghiệp,
-                            chuyên ngành mong muốn học, v.v.</div>
-                    </div>
-                    <div class="ques-item">
-                        <div class="ques">Hồ sơ sét tuyển vào trường cần những gì ?
-                            <span class="arrow-circle">
-                                <i class="fa-solid fa-plus"></i>
-                            </span>
-                        </div>
-                        <div class="ans">Phiếu đăng ký xét tuyển: Đây là một biểu mẫu đơn giản cung cấp thông tin cơ bản
-                            về thí sinh như họ tên, địa chỉ, số điện thoại, thông tin về trường học đã tốt nghiệp,
-                            chuyên ngành mong muốn học, v.v.</div>
-                    </div>
-                    <div class="ques-item">
-                        <div class="ques">Hồ sơ sét tuyển vào trường cần những gì ?
-                            <span class="arrow-circle">
-                                <i class="fa-solid fa-plus"></i>
-                            </span>
-                        </div>
-                        <div class="ans">Phiếu đăng ký xét tuyển: Đây là một biểu mẫu đơn giản cung cấp thông tin cơ bản
-                            về thí sinh như họ tên, địa chỉ, số điện thoại, thông tin về trường học đã tốt nghiệp,
-                            chuyên ngành mong muốn học, v.v.</div>
+                        <div class="ans">Nên đăng ký những môn học cơ bản, nhưng đừng quá tải mình. Nếu bạn chưa chắc
+                            chắn về chuyên ngành của mình, hãy đăng ký các môn học tổng quát để có cái nhìn tổng quan về
+                            các lĩnh vực khác nhau.</div>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-    <section>
-        <h1>HHHHHHHHHHHHHHHHHH</h1>
+    <section class="location">
+        <div class="img-intro">
+            <img src="../images/welcome-slide.jpg" alt="loca-img">
+        </div>
+        <div class="it-major-header">
+            <h2>ĐỊA CHỈ LIÊN HỆ</h2>
+            <p>Trường có ba cơ sở chính tại các khu vực khác nhau của thành phố được trang bị đầy đủ các công nghệ hiện đại.</p>
+        </div>
         <div class="container-adress">
             <div class="adress-items">
                 <div class="adress-item">
@@ -110,7 +100,10 @@
                             <li>Hotline: 0981.558.080 | 0971.274.545</li>
                         </ul>
                     </div>
-                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <div class="adress-items">
@@ -123,7 +116,10 @@
                             <li>Hotline: 0981.558.080 | 0971.274.545</li>
                         </ul>
                     </div>
-                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <div class="adress-items">
@@ -136,7 +132,10 @@
                             <li>Hotline: 0981.558.080 | 0971.274.545</li>
                         </ul>
                     </div>
-                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <div class="adress-items">
@@ -149,52 +148,15 @@
                             <li>Hotline: 0981.558.080 | 0971.274.545</li>
                         </ul>
                     </div>
-                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                            width="450px" height="150px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
         </div>
     </section>
     <script src="../JAVASCRIPT/footer.js"></script>
-    <script>
-        setTimeout(() => {
-            const quesItems = document.querySelectorAll(".ques-item");
-
-            quesItems.forEach(item => {
-                const ques = item.querySelector(".ques");
-                const ans = item.querySelector(".ans");
-                const icon = ques.querySelector(".arrow-circle i");
-
-                ques.addEventListener("click", () => {
-                    if (ans.style.display === "none") {
-                        // Đóng tất cả các phần tử "ans"
-                        quesItems.forEach(item => {
-                            const ans = item.querySelector(".ans");
-                            ans.style.display = "none";
-
-                            // Thay đổi biểu tượng thành "plus"
-                            const icon = item.querySelector(".arrow-circle i");
-                            icon.classList.remove("fa-minus");
-                            icon.classList.add("fa-plus");
-                        });
-
-                        // Mở phần tử "ans" tương ứng
-                        ans.style.display = "block";
-                        //   ans.style.opacity = "1";
-                        // Thay đổi biểu tượng thành "minus"
-                        icon.classList.remove("fa-plus");
-                        icon.classList.add("fa-minus");
-                    } else {
-                        // Đóng phần tử "ans"
-                        ans.style.display = "none";
-
-                        // Thay đổi biểu tượng thành "plus"
-                        icon.classList.remove("fa-minus");
-                        icon.classList.add("fa-plus");
-                    }
-                });
-            });
-        }, 100)
-    </script>
 </body>
 
 </html>
