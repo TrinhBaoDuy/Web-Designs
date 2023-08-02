@@ -3,7 +3,7 @@ const data = [
     {
         icon: `
        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/wlpxtupd.json" trigger="hover"
+                        <lord-icon class="my-lord-icon" src="https://cdn.lordicon.com/wlpxtupd.json" trigger="hover"
                             colors="primary:#121331,secondary:#1663c7" style="width:250px;height:250px; left: 20%;">
                         </lord-icon>
         `,
@@ -14,7 +14,7 @@ const data = [
     {
         icon: `
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/kejpvrvr.json" trigger="hover"
+                        <lord-icon class="my-lord-icon" src="https://cdn.lordicon.com/kejpvrvr.json" trigger="hover"
                             colors="primary:#121331,secondary:#ffc738,tertiary:#1663c7,quaternary:#ebe6ef,quinary:#794628"
                             style="width:250px;height:250px; left: 20%;">
                         </lord-icon>
@@ -26,7 +26,7 @@ const data = [
     {
         icon: `
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/gqqykmqo.json" trigger="hover"
+                        <lord-icon class="my-lord-icon" src="https://cdn.lordicon.com/gqqykmqo.json" trigger="hover"
                             colors="outline:#121331,primary:#1663c7,secondary:#000000,tertiary:#d1f3fa,quaternary:#f3c3ba"
                             style="width:250px;height:250px; left: 20%;">
                         </lord-icon>
@@ -38,7 +38,7 @@ const data = [
     {
         icon: `
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="hover"
+                        <lord-icon class="my-lord-icon" src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="hover"
                             colors="outline:#121331,primary:#646e78,secondary:#4bb3fd,tertiary:#ebe6ef"
                             style="width:250px;height:250px; left: 20%;">
                         </lord-icon>
@@ -50,7 +50,7 @@ const data = [
     {
         icon: `
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-        <lord-icon src="https://cdn.lordicon.com/vkweisbr.json" trigger="hover"
+        <lord-icon class="my-lord-icon" src="https://cdn.lordicon.com/vkweisbr.json" trigger="hover"
             colors="outline:#121331,primary:#646e78,secondary:#2ca58d,tertiary:#4bb3fd"
             style="width:250px;height:250px; left: 20%;">
         </lord-icon>
