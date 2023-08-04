@@ -508,6 +508,7 @@ ul.partner-companies-logo > li.company-logo img {
 } 
 
 .partner-company h2 {
+    text-align: center;
     font-size: var(--fontSize-Heading);
     letter-spacing: 1px;
 }

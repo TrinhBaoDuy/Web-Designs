@@ -450,6 +450,65 @@ a.register-btn-major > span {
 }
 
 
+/* ============ PARTNER COMPANY =============== */
+#partner-container {
+    padding: 3rem 0;
+}
+
+.partner-company {
+    width: 91%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* List companies logo */
+ul.partner-companies-logo {
+    margin-top: 1rem;
+    animation:  move 8s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-25%);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-68%);
+    }
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+ul.partner-companies-logo::-webkit-scrollbar {
+    display: none; /* hide scroll bar at Companies Logo, but still can scroll  */
+}
+
+ul.partner-companies-logo > li.company-logo {
+    margin: 0 2rem;
+    object-fit: contain;
+    width: 300px;
+}
+
+ul.partner-companies-logo > li.company-logo img {
+    width: 150px;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+
+.partner-company h2 {
+    text-align: center;
+    font-size: var(--fontSize-Heading);
+    letter-spacing: 1px;
+}
+
+
 /* Contact */
 #contact-container {
     background-color: #1f2251;
