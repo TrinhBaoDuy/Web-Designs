@@ -96,6 +96,7 @@ a {
 .input-container {
     position: relative;
     margin: 40px 2%;
+    /* display: none; */
     /* max-width: 500px; */
 }
 

@@ -14,7 +14,7 @@
     <script src="../JAVASCRIPT/lienhe.js"></script>
 </head>
 
-<body onload="napcauhoi()">
+<body onload="napcauhoi()" >
     <script src="../JAVASCRIPT/header.js"></script>
 
     <section class="banner">
@@ -28,7 +28,7 @@
         </div>
     </section>
     <main class="container">
-        <section class="mess" onload="guithu()">
+        <section class="mess">
             <div>
                 <h1>Chúng tôi rất vui lòng được hỗ trợ bạn. Vui lòng hoàn thành thông tin & đặt câu hỏi ở dưới</h1>
             </div>
@@ -45,11 +45,11 @@
                 <label for="message">Nội dung:</label>
             </div>
             <div class="input-container">
-                <button id="submit-btn">Gửi</button>
+                <button id="submit-btn" onclick="guithu()">Gửi</button>
             </div>
-            <div class="success-message" style="display: block;">
+            <div class="success-message" style="display: none;" >
                 <p>Thư của bạn đã được gửi đến trường thành công!</p>
-                <button id="write-again">Viết thư mới</button>
+                <button id="write-again" onclick="guilaithu()">Viết thư mới</button>
             </div>
         </section>
         <section class="container-question">

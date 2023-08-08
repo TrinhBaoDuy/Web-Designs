@@ -46,45 +46,28 @@ function hieuungcauhoi() {
   });
 }
 function guithu() {
-  const submitButton = document.getElementById('submit-btn');
   const nameInput = document.getElementById('name');
   const emailInput = document.getElementById('email');
   const messageInput = document.getElementById('message');
   const successMessage = document.querySelector('.success-message');
-  const writeAgainButton = document.querySelector('#write-again');
-
-  submitButton.addEventListener('click', function (event) {
-    // Ngăn chặn hành vi mặc định của trình duyệt khi nhấn nút Gửi
-    event.preventDefault();
-
-    // Kiểm tra các trường biểu mẫu có được điền đầy đủ thông tin hay không
-    if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
-      alert('Vui lòng điền đầy đủ thông tin trước khi gửi thư!');
-      return;
-    }
-
-    // Ẩn tất cả các phần tử nằm trên phần tử mới và hiển thị phần tử mới
-    const allElementsAbove = successMessage.previousElementSibling;
-    while (allElementsAbove) {
-      allElementsAbove.style.display = 'none';
-      allElementsAbove = allElementsAbove.previousElementSibling;
-    }
-    successMessage.style.display = 'block';
-  });
-
-  writeAgainButton.addEventListener('click', function () {
-    // Ẩn phần tử mới và quay lại biểu mẫu ban đầu
-    successMessage.style.display = 'none';
-
-    // Hiển thị lại tất cả các phần tử bị ẩn
-    const allElements = document.querySelectorAll('*');
-    allElements.forEach(function (element) {
-      element.style.display = 'block';
+  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+  if (nameInput.value && emailInput.value && messageInput.value) {
+    inputContainers.forEach(function (container) {
+      container.style.display = 'none';
     });
+    successMessage.style.display = 'block';
+  } else
+    alert("Nhap thong tin ............");
+}
+function guilaithu() {
+  const text = document.querySelector('.mess h1');
+  const successMessage = document.querySelector('.success-message');
+  const inputContainers = Array.from(document.querySelectorAll('.input-container'));
 
-    // Xóa nội dung của các trường biểu mẫu để có thể viết thư mới
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
+  inputContainers.forEach(function (container) {
+    container.style.display = 'block';
+
   });
+  text.innerHTML = "<h1>Kiểm tra lại thông tin & đặt lại câu hỏi ở dưới</h1>"
+  successMessage.style.display = 'none';
 }
