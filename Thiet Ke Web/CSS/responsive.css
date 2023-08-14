@@ -1,0 +1,387 @@
+/* PC */
+@media only screen and (min-width: 1024px) {
+   header {
+      height: 76px !important;
+   }
+
+   div.logo  img {
+      height: 100% !important;
+   }
+
+   div.search-icon {
+      padding: 0.4rem 1.1rem;
+   }
+
+   .nav-mobile-btn {
+      display: none;
+   }
+
+   .sub-nav {
+      display: none;
+  }
+
+   /* FOOTER SET */
+   .top-footer {
+      display: flex;
+      align-items: center;
+      /* padding: 6rem 0 3rem 0; */
+      border-bottom: 1px solid #757474;
+   }
+
+   .mid-footer {
+      padding: 4rem 0 2rem 0;
+      border-bottom: 1px solid #757474;
+   }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   
+   /* HEADER SET */
+   body {
+      position: relative;
+   }
+
+   ul.menu {
+      display: none;
+   }
+
+   .sub-nav {
+      position: absolute;
+      background-color: cadetblue;
+      right: 0;
+      left: 50%;
+      top: 0;
+      height: 100vh;
+      display: none;
+   }
+
+   .sub-nav-content {
+      
+   }
+
+   .sub-nav-content ul {
+      flex-direction: column;
+   }
+
+   .sub-nav-content ul a {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1.5rem;
+      border-bottom: 1px solid #fff;
+   }
+
+   .close-nav {
+      padding: 1rem;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+   }
+
+   .search-icon {
+      display: none;
+   }
+
+   .nav-mobile-btn {
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 1.1rem;
+   }
+
+   .it-major-header.info-system {
+      top: 2%;
+      left: 4%;
+   }
+
+   /* INTRODUCE SET */
+   .section-join__left {
+      
+   }
+
+   .section-join__right {
+      width: 50% !important;
+   }
+
+   div.section-join__right > img {
+      height: auto;
+   }
+
+   div.info-major-item {
+      width: 100%;
+   }
+
+   /* SPECIAL CONTENT SET */
+   .special-contents .special-content {
+      width: 48% !important;
+      margin-left: 0.5rem;
+   }
+
+   /* CONTACT SET */
+   .contact-section {
+      flex-direction: column;
+  }
+
+   .contact-left {
+      width: 100% !important;
+   }
+
+   .contact-right {
+      width: 100% !important;
+      margin-left: 0;
+   }
+
+   .form-items {
+      flex-direction: column;
+   }
+
+   .form-items div.input-item:nth-child(2) {
+      margin-top: 1rem;
+   }
+   
+     .contact-form input {
+      width: 100%;
+   }
+
+   /* QUOTES SET */
+   #quote-container {
+      flex-direction: column;
+   }
+
+   .quote-left {
+      width: 100% !important;
+      margin: 0 0.9rem;
+   }
+
+   .quote-right {
+      width: 100% !important;
+   }
+
+   .quote-left h2 {
+      font-size: 1.75rem;
+   }
+
+   a.register-btn-major {
+      margin: 4rem 0 4rem 30rem;
+   }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 740px) {
+   body {
+      position: relative;
+   }
+
+   ul.menu {
+      display: none;
+   }
+
+   .sub-nav {
+      position: absolute;
+      background-color: cadetblue;
+      right: 0;
+      left: 50%;
+      top: 0;
+      height: 100vh;
+      display: none;
+   }
+
+   .sub-nav-content {
+      
+   }
+
+   .sub-nav-content ul {
+      flex-direction: column;
+   }
+
+   .sub-nav-content ul a {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1.5rem;
+      border-bottom: 1px solid #fff;
+   }
+
+   .close-nav {
+      padding: 1rem;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+   }
+
+   .search-icon {
+      display: none;
+   }
+
+   .nav-mobile-btn {
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 1.1rem;
+   }
+
+   /* SLIDER SET */
+   #header-major-container {  
+      position: relative;
+   }
+
+   .it-major-header {
+      position: absolute;
+      font-size: 0.8rem;
+  }
+
+  .it-major-header h2 {
+      font-size: 2.1rem;
+  }
+
+  .it-major-header p {
+      font-size: 1.1rem;
+      margin-top: 1.6rem;
+  }
+
+  .it-major-header.info-system {
+      top: 40%;
+  }
+
+  /* INTRODUCE SET */
+
+   div.section-join {
+      flex-direction: column;
+   }
+
+   .section-join__left {
+      width: 100% !important;
+   }
+
+   .section-join__right {
+      width: 100% !important;
+   }
+
+   .info-major-item {
+      width: 100% !important;
+   }
+
+   /* SPECIAL CONTENT SET */
+   .special-contents .special-content {
+      width: 100% !important;
+   }
+
+
+   /* NANG LUC DAU RA */
+   .section-output-ability {
+      flex-direction: column;
+   }
+
+   .section-left {
+      width: 100% !important;
+   }
+
+   .section-right {
+      width: 100% !important;
+      margin: 4rem 0 0 0;
+   }
+
+   /* CARREER SET */
+   .carreer-heading {
+      flex-direction: column;
+   }
+
+   .carreer-heading {
+      margin-bottom: 3rem;
+   }
+
+   .carreer-heading h2 {
+      width: 100% !important;
+   }
+
+   .carreer-heading span {
+      width: 100% !important;
+      margin-top: 1rem;
+   }
+
+  /* CONTACT SET */
+  .contact-section {
+      flex-direction: column;
+  }
+
+  .contact-left {
+      width: 100% !important;
+  }
+
+  .contact-right {
+      width: 100% !important;
+      margin-left: 0;
+  }
+
+  .form-items {
+      flex-direction: column;
+  }
+
+  .form-items div.input-item:nth-child(2) {
+      margin-top: 1rem;
+   }
+
+  .contact-form input {
+      width: 100%;
+  }
+
+  /* QUOTES SET */
+  #quote-container {
+      flex-direction: column;
+}
+
+   .quote-left {
+      width: 100% !important;
+      margin: 0 0.9rem;
+   }
+
+   .quote-right {
+      width: 100% !important;
+   }
+
+   .quote-left h2 {
+      font-size: 1.75rem;
+   }
+
+   a.register-btn-major {
+      margin: 1rem 0 1rem 0;
+      padding: 1rem 0;
+      width: 100%
+   }
+
+   /* FOOTER SET */
+   .top-footer {
+      flex-direction: column;
+      
+      text-align: center;
+   }
+
+   .top-footer-contact {
+      width: 50% !important;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+   }
+
+   .top-footer-contact span > i {
+      display: none;
+   }
+
+   .mid-footer {
+      flex-wrap: wrap;
+   }
+
+   .mid-footer div:first-child {
+      padding-left: 0;
+   }
+
+   .bottom-footer {
+      flex-direction: column;
+      align-items: unset;
+   }
+
+   .bottom-footer > h3, .bottom-footer > p, .bottom-footer > p {
+      margin-bottom: 0.6rem;
+   }
+
+}

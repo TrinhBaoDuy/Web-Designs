@@ -7,8 +7,8 @@
     <title>Open University - HCMC</title>
     <link rel="stylesheet" href="../CSS/IT-major.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/responsive.css">
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-
 </head>
 <body>
     <header>
@@ -37,9 +37,49 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- SUB NAV MENU -->
+        <div class="sub-nav">
+            <div class="sub-nav-content">
+                <span class="close-nav">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                </span>
+                <ul class="menu">
+                    <li>
+                        <a href="../HTML/index.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>
+                             Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/GioiThieu.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Giới Thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/programs.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Chương Trình Đào Tạo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>
+                             Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="search-icon">
             <a href=""> <i class="fas fa-search icon-style"></i></a>
         </div>
+
+        <!-- Mobile open nav icon -->
+        <span class="nav-mobile-btn">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
     </header>
 
     <div id="header-major-container">
@@ -297,20 +337,24 @@
             <div class="top-footer">
                 <div class="top-footer-contact col-30per">
                     <a href="#">
-                        <img src="../images/LogoMenu.png" alt="logo">
+                        <img src="../images/logo-white-footer.png" alt="logo">
                     </a>
                 </div>
                 <div class="top-footer-contact col-23per">
                     <h4>Email</h4>
                     <p>
-                        <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        <span>
+                            <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        </span>
                         <a href="mailto:mail@mail.com">mail@mail.com</a>
                     </p>
                 </div>
                 <div class="top-footer-contact col-23per">
                     <h4>Hỗ trợ sinh viên</h4>
                     <p>
-                        <i class="fa-solid fa-phone fa-beat"></i>
+                        <span>
+                            <i class="fa-solid fa-phone fa-beat"></i>
+                        </span>
                         <span>0904.567.890</span>
                     </p>
                 </div>
@@ -318,7 +362,9 @@
                 <div class="top-footer-contact col-23per">
                     <h4>Tuyển sinh</h4>
                     <p>
-                        <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        <span>
+                            <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        </span>
                         <span>0904.567.890</span>
                     </p>
                 </div>

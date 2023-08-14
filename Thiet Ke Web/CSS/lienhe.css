@@ -11,6 +11,8 @@
 :root {
     --fontColer: #094183;
     --coursesColor: #edf2f5;
+    --fontSize-Heading: 2.4rem;
+    --fontSize-Content: 1.1rem;
 }
 
 body {
@@ -29,9 +31,9 @@ a {
 
 .container {
     /* max-width: 1300px; */
-    margin: 0 10%;
+    /* margin: 0 10%; */
     /*trên dưới 0 , trái phải auto */
-    padding: 0 20px;
+    /* padding: 0 20px; */
     display: flex;
 }
 
@@ -62,10 +64,11 @@ a {
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 30px;
+    color: #fff;
 }
 
 .banner-text p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
@@ -91,12 +94,17 @@ a {
 .mess {
     width: 40%;
     background-color: #a6c0d3;
+    padding: 1rem;
+}
+
+.help-heading h1 {
+    font-size: 1.2rem;
+
 }
 
 .input-container {
     position: relative;
     margin: 40px 2%;
-    /* display: none; */
     /* max-width: 500px; */
 }
 
@@ -134,6 +142,7 @@ input[type="text"]:valid+label {
     font-weight: bold;
     color: var(--fontColer);
     /* box-shadow:  10px 10px 10px var(--coursesColor); */
+    border-color: #07135a;
 }
 
 .mess button {
@@ -195,6 +204,9 @@ input[type="email"]:valid+label {
 
 .input-container textarea {
     width: 100%;
+    border-radius: 3px;
+    outline: none;
+    padding: 1rem;
 }
 
 /* -------------------------------------- */
@@ -206,19 +218,38 @@ input[type="email"]:valid+label {
 }
 
 .ques-item {
-    border-top: 2px solid var(--fontColer);
+    /* border-top: 2px solid var(--fontColer); */
 }
 
 .ques-item:first-child {
     border: none;
 }
 
+/* TEST */
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-/* Câu hỏi thường gặp */
+
+
+/* ====================== Câu Hỏi Thường Gặp =============== */
 .section-ques h2 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 10px;
+}
+
+.ques {
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #035691;
+    border-radius: 4px;
+}
+
+.ques-items {
+    margin-top: 2.5rem;
 }
 
 .section-ques .ques-item .ans {
@@ -235,19 +266,27 @@ input[type="email"]:valid+label {
     /* display: block; */
     max-height: 200px;
     opacity: 1;
+    margin-bottom: 1rem;
 }
 
 .section-ques .ques-item {
     position: relative;
     cursor: pointer;
-    margin: 22px;
+    margin: 0.3rem 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 .section-ques .ques-item .arrow-circle {
     position: absolute;
-    right: 0;
-    /* cursor: pointer; */
+    right: 11px;
     transition: transform 0.5s ease;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0.1rem 0.4rem;
+    text-align: center;
+    color: #035691;
+    font-weight: 900;
 }
 
 .section-ques .ques-item .arrow-circle i {
@@ -267,7 +306,7 @@ input[type="email"]:valid+label {
     height: 300px;
 }
 
-.img-intro>img {
+.img-intro > img {
     height: 300px;
     width: 100%;
     background: rgba(27, 4, 4, 0.3);

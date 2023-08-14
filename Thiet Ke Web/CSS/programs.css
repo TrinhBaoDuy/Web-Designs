@@ -71,15 +71,19 @@ header {
 	left: 0;
 	right: 0;
 	background-color: var(--mainColor);
-	min-height: 96px;
+	height: 76px;
 	display: flex;
     justify-content: space-between;
 	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.4);
 	z-index: 99;
 }
 
-div.logo > img {
-	
+div.logo {
+	height: 100%;
+}
+
+div.logo  img {
+	height: 100%;
 }
 
 nav {
@@ -96,6 +100,8 @@ ul.menu li {
 	margin-right: 1.6rem;
 	font-size: 1.4rem;
 }
+
+
 
 /* Bi thay doi height cua ul khi hover cac li => problem ? */
 /* ul.menu li:hover {
@@ -122,6 +128,7 @@ div.search-icon {
 }
 
 
+
 /* CONTENT */
 body {
 	/* height: 6000px; */
@@ -129,7 +136,7 @@ body {
 
 #main .welcome-slide {
 	position: relative;
-	margin-top: 96px;
+	/* margin-top: 96px; */
     padding-top: 50%;
 	background: url('../images/welcome-slide.jpg') top center / cover no-repeat;
 }
@@ -460,8 +467,8 @@ ul.partner-companies-logo > li.company-logo img {
 
 /* FOOTER */
 footer {
-	height: 100vh;
 	background-color: var(--mainColor) !important;
+    /* background:  url("../images/Picture1.jpg"), bottom center / cover, no-repeat; */
 }
 
 .container-footer {
@@ -475,8 +482,9 @@ footer {
 
 .top-footer {
 	display: flex;
-	padding: 6rem 0 3rem 0;
-    border-bottom: 1px solid #ccc;
+    align-items: center;
+	/* padding: 6rem 0 3rem 0; */
+    border-bottom: 1px solid #757474;
 }
 
 .top-footer > div:first-child img {
@@ -501,7 +509,7 @@ footer {
 
 .mid-footer {
 	padding: 4rem 0 2rem 0;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #757474;
 }
 
 .mid-footer div:first-child {
@@ -512,6 +520,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    padding: 2rem 0;
 }
 
 .bottom-footer h3, .bottom-footer p {
