@@ -25,3 +25,8 @@ function hideSubNav() {
 	var spanElement = document.querySelector(".sub-nav");
 	spanElement.classList.remove("open-nav");
 }
+
+// Load lại khi thay đổi k.thước @media
+window.addEventListener('resize', function() {
+	location.reload();
+});

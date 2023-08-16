@@ -35,7 +35,7 @@ a {
 /* banner styles */
 .banner {
   background: url('../images/university.gif') no-repeat center center;
-  /* background: #035691; */
+  margin-top: 76px;
   background-size: cover;
   height: 500px;
   display: flex;

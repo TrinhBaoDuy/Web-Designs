@@ -6,12 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open University - HCMC</title>
     <link rel="stylesheet" href="../CSS/IT-major.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="../JAVASCRIPT/scroll_top.js"></script>
 </head>
 <body>
-    <script src="../JAVASCRIPT/header.js"></script>
+    <header class="wow animate__animated animate__fadeInUp">
+        <div class="logo">
+            <a href="#">
+                <img src="../images/LogoMenu.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                    <a href="../HTML/index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-users icon-style"></i></span>
+                    <a href="../HTML/GioiThieu.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-user-graduate icon-style"></i></span>
+                    <a href="../HTML/programs.html">Chương Trình Đào Tạo</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                    <a href="../HTML/lienhe.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SUB NAV MENU -->
+        <div class="sub-nav">
+            <div class="sub-nav-content">
+                <span class="close-nav" onclick="hideSubNav()">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                    <span>Close</span>
+                </span>
+                <!-- LOGO FOR MOBILE -->
+                <div class="logo mobile">
+                    <a href="#">
+                        <img src="../images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <!-- END: LOGO FOR MOBILE -->
+                <ul class="sub-menu">
+                    <li>
+                        <a href="../HTML/index.html">
+                            <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                             Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/GioiThieu.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Giới Thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/programs.html">
+                            <span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
+                             Chương Trình Đào Tạo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/lienhe.html">
+                            <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                             Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-icon">
+            <a href=""> <i class="fas fa-search icon-style"></i></a>
+        </div>
+
+        <!-- Mobile open nav icon -->
+        <span class="nav-mobile-btn" onclick="showSubNav()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+    </header>
 
     <div id="header-major-container">
         <div class="img-intro">
@@ -263,6 +342,109 @@
             </div>
         </div>
     </main>
-    <script src="../JAVASCRIPT/footer.js"></script>
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <div class="top-footer-contact col-30per">
+                    <a href="#">
+                        <img src="../images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Email</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        </span>
+                        <a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Hỗ trợ sinh viên</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone fa-beat"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Tuyển sinh</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="mid-footer flex">
+                <div class="top-footer-contact col-30per">
+                    <h4>Về chúng tôi</h4>
+                    <p>
+                        <p><a href="#">Tin tức</a></p>
+                        <p><a href="#">Sự kiện</a></p>
+                        <p><a href="#">Tuyển dụng</a></p>
+                        <p><a href="#">Đảm bảo chất lượng</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Truy cập nhanh</h4>
+                    <p>
+                        <p><a href="#">Hệ thống E-Learning</a></p>
+                        <p><a href="#">Thư viện</a></p>
+                        <p><a href="#">Đào đạo từ xa</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Follow us</h4>
+                    <p>
+                        <p>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span><a href="https://vi-vn.facebook.com/" target="_blank">Facebook</a></span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>
+                                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>
+                                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <span>
+                                <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
+                            </span>
+                        </p>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Các ngành và khối đào tạo</h4>
+                    <p>
+                        <p><a href="#">Công nghệ thông tin</a></p>
+                        <p><a href="#">Du lịch</a></p>
+                        <p><a href="#">Quản trị kinh doanh</a></p>
+                        <p><a href="#">Kiến trúc</a></p>
+                        <p><a href="#">Luật - Xã hội Nhân văn - Truyền thông</a></p>
+                        <p><a href="#">Thiết kế - Nghệ Thuật</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <h3>&copy; 2023 Trịnh Bảo Duy & Đàng Sỹ Tuân. All rights reserved.</h3>
+                <p>Điều khoản</p>
+                <p>Chính sách</p>
+                <p>Copyright</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
