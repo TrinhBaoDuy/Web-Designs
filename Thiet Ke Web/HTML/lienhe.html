@@ -16,7 +16,86 @@
 </head>
 
 <body onload="napcauhoi()">
-    <script src="../JAVASCRIPT/header.js"></script>
+    <!-- <script src="../JAVASCRIPT/header.js"></script> -->
+    <header class="wow animate__animated animate__fadeInUp">
+        <div class="logo">
+            <a href="#">
+                <img src="../images/LogoMenu.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                    <a href="../HTML/index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-users icon-style"></i></span>
+                    <a href="../HTML/GioiThieu.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-user-graduate icon-style"></i></span>
+                    <a href="../HTML/programs.html">Chương Trình Đào Tạo</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                    <a href="#">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SUB NAV MENU -->
+        <div class="sub-nav">
+            <div class="sub-nav-content">
+                <span class="close-nav" onclick="hideSubNav()">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                    <span>Close</span>
+                </span>
+                <!-- LOGO FOR MOBILE -->
+                <div class="logo mobile">
+                    <a href="#">
+                        <img src="../images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <!-- END: LOGO FOR MOBILE -->
+                <ul class="sub-menu">
+                    <li>
+                        <a href="../HTML/index.html">
+                            <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                             Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/GioiThieu.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Giới Thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../HTML/programs.html">
+                            <span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
+                             Chương Trình Đào Tạo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                             Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-icon">
+            <a href=""> <i class="fas fa-search icon-style"></i></a>
+        </div>
+
+        <!-- Mobile open nav icon -->
+        <span class="nav-mobile-btn" onclick="showSubNav()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+    </header>
 
     <section class="banner">
         <div class="container">
@@ -146,78 +225,151 @@
         <div class="img-intro">
             <img src="../images/welcome-slide.jpg" alt="loca-img">
         </div>
-        <!-- <div class="it-major-header">
+        <div class="it-major-header">
             <h2>ĐỊA CHỈ LIÊN HỆ</h2>
             <p>Trường có ba cơ sở chính tại các khu vực khác nhau của thành phố được trang bị đầy đủ các công nghệ hiện đại.</p>
-        </div> -->
-        <div class="container-adress">
-            <div class="adress-items">
-                <div class="adress-item">
-                    <div class="district">Cơ sở Hà Nội</div>
-                    <div class="info">
-                        <ul>
-                            <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
-                            <li>Điện thoại: 024.7300.2266</li>
-                            <li>Hotline: 0981.558.080 | 0971.274.545</li>
-                        </ul>
-                    </div>
+        </div>
+
+        <!-- ADDRESS + MAP -->
+        <div class="container-address">
+            <div class="address-item">
+                <h3>Cơ sở Hà Nội</h3>
+                <div class="address-info">
+                    <ul>
+                        <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
+                        <li>Điện thoại: 024.7300.2266</li>
+                        <li>Hotline: 0981.558.080 | 0971.274.545</li>
+                    </ul>
                     <div class="map"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
-                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="adress-items">
-                <div class="adress-item">
-                    <div class="district">Cơ sở Hà Nội</div>
-                    <div class="info">
-                        <ul>
-                            <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
-                            <li>Điện thoại: 024.7300.2266</li>
-                            <li>Hotline: 0981.558.080 | 0971.274.545</li>
-                        </ul>
-                    </div>
+            <div class="address-item">
+                <h3>Cơ sở Hà Nội</h3>
+                <div class="address-info">
+                    <ul>
+                        <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
+                        <li>Điện thoại: 024.7300.2266</li>
+                        <li>Hotline: 0981.558.080 | 0971.274.545</li>
+                    </ul>
                     <div class="map"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
-                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="adress-items">
-                <div class="adress-item">
-                    <div class="district">Cơ sở Hà Nội</div>
-                    <div class="info">
-                        <ul>
-                            <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
-                            <li>Điện thoại: 024.7300.2266</li>
-                            <li>Hotline: 0981.558.080 | 0971.274.545</li>
-                        </ul>
-                    </div>
-                    <div class="map"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
-                            width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                </div>
-            </div>
-            <div class="adress-items">
-                <div class="adress-item">
-                    <div class="district">Cơ sở Hà Nội</div>
-                    <div class="info">
-                        <ul>
-                            <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội</li>
-                            <li>Điện thoại: 024.7300.2266</li>
-                            <li>Hotline: 0981.558.080 | 0971.274.545</li>
-                        </ul>
-                    </div>
-                    <div class="map"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
-                            width="450px" height="150px" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                </div>
-            </div>
+            
         </div>
     </section>
-    <script src="../JAVASCRIPT/footer.js"></script>
+    <!-- <script src="../JAVASCRIPT/footer.js"></script> -->
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <div class="top-footer-contact col-30per">
+                    <a href="#">
+                        <img src="../images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Email</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        </span>
+                        <a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Hỗ trợ sinh viên</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone fa-beat"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Tuyển sinh</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="mid-footer flex">
+                <div class="top-footer-contact col-30per">
+                    <h4>Về chúng tôi</h4>
+                    <p>
+                        <p><a href="#">Tin tức</a></p>
+                        <p><a href="#">Sự kiện</a></p>
+                        <p><a href="#">Tuyển dụng</a></p>
+                        <p><a href="#">Đảm bảo chất lượng</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Truy cập nhanh</h4>
+                    <p>
+                        <p><a href="#">Hệ thống E-Learning</a></p>
+                        <p><a href="#">Thư viện</a></p>
+                        <p><a href="#">Đào đạo từ xa</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Follow us</h4>
+                    <p>
+                        <p>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span><a href="https://vi-vn.facebook.com/" target="_blank">Facebook</a></span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>
+                                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>
+                                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <span>
+                                <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
+                            </span>
+                        </p>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Các ngành và khối đào tạo</h4>
+                    <p>
+                        <p><a href="#">Công nghệ thông tin</a></p>
+                        <p><a href="#">Du lịch</a></p>
+                        <p><a href="#">Quản trị kinh doanh</a></p>
+                        <p><a href="#">Kiến trúc</a></p>
+                        <p><a href="#">Luật - Xã hội Nhân văn - Truyền thông</a></p>
+                        <p><a href="#">Thiết kế - Nghệ Thuật</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <h3>&copy; 2023 Trịnh Bảo Duy & Đàng Sỹ Tuân. All rights reserved.</h3>
+                <p>Điều khoản</p>
+                <p>Chính sách</p>
+                <p>Copyright</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

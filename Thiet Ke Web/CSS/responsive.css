@@ -67,18 +67,18 @@
 
    /* SUB NAV MENU */
    .sub-nav {
-      /* display: none; */
+      display: none;
       position: absolute;
       background-color: var(--mainColor);
       box-shadow: 0 0 5px rgba(0, 0, 0, 4);
       right: 0;
-      left: 100%;
+      left: 50%;
       top: 0;
       height: 100vh;
    }
 
-   .open-nav-tablet {
-      left: 50%;
+   .open-nav {
+      display: block;
    }
 
    .sub-nav-content {
@@ -100,10 +100,15 @@
    }
 
    .close-nav {
+      display: block;
       padding: 1rem;
-      text-align: center;
       font-size: 2.5rem;
       color: #fff;
+      background: #232e53;
+   }
+
+   .close-nav i {
+      font-size: 1.8rem;
    }
 
    .close-nav:hover {
@@ -377,10 +382,15 @@
    }
 
    .close-nav {
+      display: block;
       padding: 1rem;
-      text-align: center;
       font-size: 2.5rem;
       color: #fff;
+      background: #232e53;
+   }
+
+   .close-nav i {
+      font-size: 1.8rem;
    }
 
    .close-nav:hover {
