@@ -102,8 +102,49 @@ footer.innerHTML = `
 					<p>Copyright</p>
 				</div>
 			</div>
+		</footer>
+
 `;
 const style = `
+:root {
+	--mainColor: #000f46;
+	--coursesColor: #edf2f5;
+	--fontSize-Heading: 2.4rem;
+    --fontSize-Content: 1.1rem;
+}
+
+.col-half {
+	width: 50% !important;
+}
+
+.col-23per {
+	width: 23% !important;
+}
+
+.col-30per {
+	width: 30% !important;
+}
+
+.col-third {
+	width: 33.333% !important;
+}
+
+.col-forth {
+	width: 25% !important;
+}
+
+.col-fifth {
+	width: 20% !important;
+}
+
+.col-19 {
+	width: 19% !important;
+}
+
+.m-left-right-128px {
+	margin: 0 128px !important;
+}
+
 footer {
 	background-color: var(--mainColor) !important;
     /* background:  url("../images/Picture1.jpg"), bottom center / cover, no-repeat; */
@@ -164,6 +205,41 @@ footer {
 .bottom-footer h3, .bottom-footer p {
 	color: #fff;
 	font-weight: normal;
+}
+
+@media only screen and (max-width: 740px) {
+	.top-footer {
+		flex-direction: column;
+		
+		text-align: center;
+	 }
+  
+	 .top-footer-contact {
+		width: 50% !important;
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
+	 }
+  
+	 .top-footer-contact span > i {
+		display: none;
+	 }
+  
+	 .mid-footer {
+		flex-wrap: wrap;
+	 }
+  
+	 .mid-footer div:first-child {
+		padding-left: 0;
+	 }
+  
+	 .bottom-footer {
+		flex-direction: column;
+		align-items: unset;
+	 }
+  
+	 .bottom-footer > h3, .bottom-footer > p, .bottom-footer > p {
+		margin-bottom: 0.6rem;
+	 }
 }
   `
 document.head.insertAdjacentHTML('beforeend', `<style>${style}</style>`);
