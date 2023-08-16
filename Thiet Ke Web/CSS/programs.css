@@ -1,5 +1,5 @@
 :root {
-	--mainColor: #094183;
+	--mainColor: #000f46;
 	--coursesColor: #edf2f5;
 	--fontSize-Heading: 2.4rem;
     --fontSize-Content: 1.1rem;
@@ -101,6 +101,11 @@ ul.menu li {
 	font-size: 1.4rem;
 }
 
+/* TEST OPEN NAV */
+.open-nav {
+	display: block;
+ }
+
 
 
 /* Bi thay doi height cua ul khi hover cac li => problem ? */
@@ -130,44 +135,36 @@ div.search-icon {
 
 
 /* CONTENT */
-body {
-	/* height: 6000px; */
+.welcome-slider {
+	margin-top: 76px;
+	background-color: var(--mainColor);
 }
 
-#main .welcome-slide {
-	position: relative;
-	/* margin-top: 96px; */
-    padding-top: 50%;
-	background: url('../images/welcome-slide.jpg') top center / cover no-repeat;
-}
-
-span.blur-img {
-	position: absolute;
-    width: 700px;
-    min-height: 400px;
-    background-color: rgba(12, 64, 125, 0.9);
-    left: 26px;
-    bottom: 38px;
+.welcome-img img {
+	width: 100%;
+	height: 100%;
 }
 
 .welcome-info {
-	margin: 50px;
+	margin: 74px 38px 60px;
 }
 
-span.blur-img > div.welcome-info > h2 {
+div.welcome-info > h2 {
 	font-size: 3rem;
 	color: #fff;
 	margin-bottom: 44px;
 }
 
 .welcome-form {
-	height: 44px;
+	height: 56px;
 }
 
-span.blur-img input#search-box {
-	min-width: 400px;
+input#search-box {
+	width: 80%;
 	height: 100%;
+	font-size: 1.1rem;
 	padding: 0.6rem;
+	margin-right: 0.3rem;
 	border-radius: 5px 0 0 5px;
     border: none;
 }
@@ -178,6 +175,11 @@ button.search-btn {
     padding: 8px 18px;
 	border-radius: 0 5px 5px 0;
     border: none;
+}
+
+button.search-btn:hover {
+	background-color: #46c8f0;
+	cursor: pointer;
 }
 
 button.search-btn  i {
@@ -192,13 +194,14 @@ div.popular-search > p {
 
 div.popular-search > ul  a {
 	text-decoration: underline;
-	color: #fff;
+	color: #46c8f0;
 	font-weight: 600;
 	font-size: 0.9rem;
 }
 
 div.popular-search > ul  a:hover {
 	text-decoration: none;
+	color: #fff;
 }
 
 ul.top-search-lists {
@@ -252,13 +255,18 @@ div.section-join {
 }
 
 .section-join__left {
+	flex-direction: column;
 	margin-left: 80px;
 	padding: 48px;
 }
 
+.section-join__left p {
+	padding: 1rem 0;
+}
+
 .section-join__left > h2 {
 	font-size: 2rem;
-	margin-bottom: 12px;
+	/* margin-bottom: 12px; */
 }
 
 a.register-btn {
@@ -324,7 +332,7 @@ div.majors .major-cell {
 div.majors img {
 	width: 100%;
 	max-height: 214.25px;
-	border-radius: 20px;
+	border-radius: 0.6rem;
 	transition: transform 0.6s;
 	/* background-color: rgba(0, 0, 0, 0.9); */
 }
@@ -378,9 +386,13 @@ div.majors h3 {
 	width: 100%;
 }
 
+.info-lists {
+	margin-right: 7rem;
+}
+
 li.info-list {
 	position: relative;
-	width: 476px;
+	width: 100%;
 }
 
 li.info-list a {

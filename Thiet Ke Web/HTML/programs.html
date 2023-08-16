@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="../CSS/programs.css" />
 		<link rel="stylesheet" href="../CSS/responsive.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script src="JavaScript/program.js"></script>
+		<script src="../JAVASCRIPT/scroll_top.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 	</head>
 	<body>
@@ -19,6 +20,7 @@
 					<img src="../images/LogoMenu.png" alt="logo">
 				</a>
 			</div>
+
 			<nav>
 				<ul class="menu">
 					<li>
@@ -46,10 +48,17 @@
 					<span class="close-nav">
 						<i class="fa-solid fa-xmark fa-xl"></i>
 					</span>
-					<ul class="menu">
+					<!-- LOGO FOR MOBILE -->
+					<div class="logo mobile">
+						<a href="#">
+							<img src="../images/logo-white-footer.png" alt="logo">
+						</a>
+					</div>
+					<!-- END: LOGO FOR MOBILE -->
+					<ul class="sub-menu">
 						<li>
 							<a href="../HTML/index.html">
-								<span><i class="fa-solid fa-users icon-style"></i></span>
+								<span><i class="fa-solid fa-house home-icon icon-style"></i></span>
 								 Trang Chủ
 							</a>
 						</li>
@@ -61,13 +70,13 @@
 						</li>
 						<li>
 							<a href="../HTML/programs.html">
-								<span><i class="fa-solid fa-users icon-style"></i></span>    
+								<span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
 								 Chương Trình Đào Tạo
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span><i class="fa-solid fa-users icon-style"></i></span>
+								<span><i class="fa-solid fa-phone-volume icon-style"></i></span>
 								 Liên Hệ
 							</a>
 						</li>
@@ -84,16 +93,13 @@
 			</span>
 		</header>
 		<main id="main">
-			<div class="welcome-slide">
-				<!-- <img src="images/welcome-slide.jpg" alt="welcome-slide"> -->
-			</div>
-			<span class="blur-img">
-				<div class="welcome-info">
-					<h2 class="welcome-header">Khám phá tương lai <br> OU của bạn!<br> </h2>
-					<div class="welcome-form">
-						<input type="search" name="" id="search-box" placeholder="Tìm khóa học" />
+			<div class="welcome-slider flex">
+				<div class="welcome-info col-half">
+					<h2 class="welcome-header">Khám phá tương lai của bạn với OU!<br> </h2>
+					<div class="welcome-form flex">
+						<input type="search" name="" id="search-box" placeholder="Tìm ngành yêu thích" />
 						<button class="search-btn">
-							<a href=""> <i class="fas fa-search"></i></a>
+							<a href="#"> <i class="fas fa-search"></i></a>
 						</button>
 					</div>
 					<div class="popular-search">
@@ -107,7 +113,11 @@
 						</ul>
 					</div>
 				</div>
-			</span>
+
+				<div class="welcome-img col-half">
+					<img src="../images/welcome-slide.jpg" alt="">
+				</div>
+			</div>
 			
 			<div id="content">
 				<div class="courses">
@@ -157,15 +167,13 @@
 					</div>
 				</div>
 
-				<div class="section-join">
-					<div class="section-join__left col-half">
+				<div class="section-join ctdt">
+					<div class="section-join__left col-half flex">
 						<h2 class="heading-section-join">Tham gia cùng chúng tôi</h2>
 						<p>
 							Suy nghĩ về việc học tập tại OU? Hãy tự mình khám phá cuộc sống đại học trong một chương trình thú vị gồm hơn 350 trải nghiệm trực tiếp, triển lãm, các buổi cung cấp thông tin và các chuyến tham quan.
-							<br>
-							<br>
-							Gặp gỡ cộng đồng của chúng tôi, khám phá các phòng thí nghiệm và không gian học tập của chúng tôi, đồng thời khám phá cách thức hoạt động của chương trình giảng dạy linh hoạt của chúng tôi.
 						</p>
+						<p>Gặp gỡ cộng đồng của chúng tôi, khám phá các phòng thí nghiệm và không gian học tập của chúng tôi, đồng thời khám phá cách thức hoạt động của chương trình giảng dạy linh hoạt của chúng tôi.</p>
 						
 						<a href="../HTML/DangKy.html" target="_blank" class="register-btn">
 							Tìm hiểu thêm và đăng ký
@@ -177,10 +185,10 @@
 					</div>
 				</div>
 
-				<div class="container-major">
+				<div class="container-major ctdt">
 					<h2 class="major-path">Ngành đào tạo ĐẠI HỌC</h2>
 					<p class="major-text">Biết nghề nghiệp bạn muốn nhưng không chắc làm thế nào để biến nó thành hiện thực? Con đường sự nghiệp của chúng tôi có thể giúp bạn đạt được tham vọng của mình.</p>
-					<div class="majors">
+					<div class="majors ctdt">
 						<div class="major-cell">
 							<a href="../HTML/IT-major.html" target="_blank" class="major-link">
 								<img src="../images/NgonNgu.jpg" alt="law">
@@ -220,7 +228,7 @@
 					</div>
 				</div>
 				
-				<div class="passion">
+				<div class="passion ctdt">
 					<div class="passion-center">
 						<div class="section-join__left passion-content">
 							<h2 class="heading-section-join passion-h2">Theo đuổi đam mê của bạn tại OU &#9889;</h2>
@@ -234,7 +242,7 @@
 					</div>
 				</div>
 
-				<div class="info-container">
+				<div class="info-container ctdt flex">
 					<div class="left col-half">
 						<img src="../images/info-img.jpg" alt="info-img">
 					</div>

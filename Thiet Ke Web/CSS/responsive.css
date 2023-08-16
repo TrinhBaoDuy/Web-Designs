@@ -1,10 +1,22 @@
+:root {
+	--mainColor: #000f46;
+	--coursesColor: #edf2f5;
+	--fontSize-Heading: 2.4rem;
+    --fontSize-Content: 1.1rem;
+}
+
 /* PC */
 @media only screen and (min-width: 1024px) {
+   /* ============ MAJORS RESPONSIVE ========== */
    header {
       height: 76px !important;
    }
 
-   div.logo  img {
+   .logo.mobile {
+      display: none;
+   }
+
+   div.logo img {
       height: 100% !important;
    }
 
@@ -32,13 +44,19 @@
       padding: 4rem 0 2rem 0;
       border-bottom: 1px solid #757474;
    }
+
+   /* ============ CTDT RESPONSIVE ========== */
 }
 
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-   
+   /* ============ MAJORS RESPONSIVE ========== */
    /* HEADER SET */
+   .logo.mobile {
+      display: none;
+   }
+   
    body {
       position: relative;
    }
@@ -47,22 +65,29 @@
       display: none;
    }
 
+   /* SUB NAV MENU */
    .sub-nav {
+      /* display: none; */
       position: absolute;
-      background-color: cadetblue;
+      background-color: var(--mainColor);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 4);
       right: 0;
-      left: 50%;
+      left: 100%;
       top: 0;
       height: 100vh;
-      display: none;
+   }
+
+   .open-nav-tablet {
+      left: 50%;
    }
 
    .sub-nav-content {
-      
+      display: block;
    }
 
    .sub-nav-content ul {
       flex-direction: column;
+      margin-top: 20%;
    }
 
    .sub-nav-content ul a {
@@ -71,6 +96,7 @@
       font-weight: bold;
       padding: 1.5rem;
       border-bottom: 1px solid #fff;
+      color: #fff;
    }
 
    .close-nav {
@@ -78,6 +104,11 @@
       text-align: center;
       font-size: 2.5rem;
       color: #fff;
+   }
+
+   .close-nav:hover {
+      cursor: pointer;
+      opacity: 0.9;
    }
 
    .search-icon {
@@ -89,6 +120,8 @@
       font-size: 1.3rem;
       padding: 1.1rem;
    }
+   /* END SUB NAV MENU */
+   
 
    .it-major-header.info-system {
       top: 2%;
@@ -140,7 +173,7 @@
       margin-top: 1rem;
    }
    
-     .contact-form input {
+   .contact-form input {
       width: 100%;
    }
 
@@ -165,11 +198,141 @@
    a.register-btn-major {
       margin: 4rem 0 4rem 30rem;
    }
+
+   /* ============ CTDT RESPONSIVE ========== */
+   /* WELCOME SLIDER SET */
+   div.welcome-info > h2 {
+      font-size: 2.6rem;
+   }
+
+   ul.top-search-lists {
+      flex-direction: column;
+   }
+
+   ul.top-search-lists li {
+      padding: 0.8rem;
+   }
+
+   .welcome-img img {
+      object-fit: cover;
+   }
+
+   /* COURSES SET */
+   div#content div.courses {
+      width: unset;
+      margin: 0;
+      flex-wrap: wrap;
+   }
+
+   div#content div.course {
+      width: 50% !important;
+   }
+
+   a.name-course h2 {
+      font-size: 1.5rem;
+   }
+
+   .desc-course p {
+      font-size: 1rem;
+   }
+
+   /* JOIN SET */
+   div.section-join.ctdt > .section-join__left {
+      margin-left: 0;
+   }
+
+   div.section-join.ctdt > .section-join__right img {
+      object-fit: cover;
+      height: 100%;
+   }
+
+   /* CONTAINER MAJOR SET */
+   .container-major.ctdt {
+      width: 90% !important;
+      padding: 4.2rem 0;
+   }
+
+   .majors.ctdt {
+      justify-content: space-between;
+   }
+
+   .majors.ctdt img {
+      border-radius: 0.6rem;
+   }
+
+   div.majors.ctdt h3 {
+      text-align: center;
+   }
+
+   .majors.ctdt .major-cell {
+      width: 46.8%;
+      margin: 1rem 0;
+   }
+
+   /* VIDEO SET */
+   .passion.ctdt .passion-center {
+      width: 90%;
+   }
+
+   .passion.ctdt .passion-center > .section-join__left {
+      width: 100%;
+      margin: 0;
+      padding: 0 1.2rem 0 0;
+   }
+
+   .passion.ctdt .passion-video {
+      width: 182%;
+      text-align: center;
+   }
+
+   .passion.ctdt .passion-video > iframe {
+      width: 100%;
+   }
+
+   /* BAT DAU VOI OU */
+   .info-container.ctdt {
+
+   }
+
+   .info-container.ctdt img {
+      height: 100%;
+      object-fit: cover;
+   }
+
+   .info-container.ctdt .right {
+      margin-top: 0;
+      width: 70% !important;
+      padding: 4rem 0rem 4rem 0;
+   }
+
+   .info-container.ctdt .info-lists {
+      width: 90%;
+   }
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 740px) {
+   /* ============ MAJORS RESPONSIVE ========== */
+   /* HEADER SET */
+   header div.logo img {
+      display: none;
+   }
+
+   .logo.mobile {
+      display: block;
+      width: 240px;
+      height: 224px;
+      padding-left: 0.4rem;
+      margin: 0 auto;
+   }
+
+   .logo.mobile img {
+      display: block;
+      width: 100%;
+      height: 100%;
+   }
+   
    body {
       position: relative;
    }
@@ -178,17 +341,25 @@
       display: none;
    }
 
+   /* SUB NAV MENU */
    .sub-nav {
+      display: none;
       position: absolute;
-      background-color: cadetblue;
+      background-color: var(--mainColor);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 4);
       right: 0;
-      left: 50%;
+      left: 30%;
       top: 0;
       height: 100vh;
-      display: none;
+      cursor: pointer;
+   }
+
+   .open-nav {
+      display: block;
    }
 
    .sub-nav-content {
+      display: block;
       
    }
 
@@ -198,10 +369,11 @@
 
    .sub-nav-content ul a {
       display: block;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
       padding: 1.5rem;
       border-bottom: 1px solid #fff;
+      color: #fff;
    }
 
    .close-nav {
@@ -211,6 +383,11 @@
       color: #fff;
    }
 
+   .close-nav:hover {
+      cursor: pointer;
+      opacity: 0.9;
+   }
+
    .search-icon {
       display: none;
    }
@@ -218,8 +395,11 @@
    .nav-mobile-btn {
       color: #fff;
       font-size: 1.3rem;
-      padding: 1.1rem;
+      padding: 1.3rem;
    }
+
+   /* END SUB NAV MENU */
+
 
    /* SLIDER SET */
    #header-major-container {  
@@ -384,4 +564,167 @@
       margin-bottom: 0.6rem;
    }
 
+   /* ============ CTDT RESPONSIVE ========== */
+   /* WELCOME SLIDER SET */
+   .welcome-slider {
+      flex-direction: column-reverse;
+   }
+
+   .welcome-info {
+      width: 90% !important;
+      margin: 0 auto;
+      padding: 2rem 0;
+   }
+
+   .welcome-img {
+      width: 100% !important;
+   }
+
+   div.welcome-info > h2 {
+      font-size:  rem;
+   }
+
+   ul.top-search-lists {
+      flex-direction: column;
+   }
+
+   ul.top-search-lists li {
+      padding: 0.8rem;
+   }
+
+   .welcome-img img {
+      object-fit: cover;
+   }
+
+   /* COURSES SET */
+   div#content div.courses {
+      width: unset;
+      margin: 0;
+      flex-wrap: wrap;
+   }
+
+   div#content div.course {
+      width: 100% !important;
+   }
+
+   a.name-course h2 {
+      font-size: 1.5rem;
+   }
+
+   .desc-course p {
+      font-size: 1rem;
+   }
+
+   /* JOIN SET */
+   div.section-join.ctdt {
+      flex-direction: column-reverse;
+   }
+
+   div.section-join.ctdt > .section-join__left {
+      width: 85% !important;
+      padding: 3rem 0;
+      margin: 0 auto;
+   }
+
+   div.section-join.ctdt > .section-join__left > h2 {
+      font-size: 1.6rem;
+   }
+
+   div.section-join.ctdt > .section-join__right img {
+      object-fit: cover;
+      height: 100%;
+   }
+
+   div.section-join.ctdt a.register-btn {
+      padding: 12px 28px;
+   }
+
+   /* CONTAINER MAJOR SET */
+   .container-major.ctdt {
+      width: 85% !important;
+      margin: 0 auto;
+      padding: 0.6rem 0;
+   }
+
+   .container-major.ctdt > h2.major-path {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+   }
+
+   .majors.ctdt {
+      justify-content: space-between;
+   }
+
+   .majors.ctdt img {
+      border-radius: 0.6rem;
+   }
+
+   div.majors.ctdt h3 {
+      text-align: center;
+   }
+
+   .majors.ctdt .major-cell {
+      width: 100%;
+      margin: 0 0 2rem 0;
+   }
+
+   /* VIDEO SET */
+   .passion.ctdt .passion-center {
+      flex-direction: column;
+      width: 85%;
+      margin: 0 auto;
+      padding: 3.2rem 0;
+   }
+
+   .passion.ctdt .passion-h2 {
+      font-size: 1.6rem;
+   }
+
+   .passion.ctdt .passion-center > .section-join__left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+
+   .passion.ctdt .passion-video {
+      margin-top: 1.6rem;
+      width: 100%;
+      text-align: center;
+   }
+
+   .passion.ctdt .passion-video > iframe {
+      width: 100%;
+   }
+
+   /* BAT DAU VOI OU */
+   .info-container.ctdt {
+      flex-direction: column;
+   }
+
+   .info-container.ctdt h3 {
+      font-size: 1.6rem;
+   }
+
+   .info-container.ctdt li.info-list a {
+      font-size: 1rem;
+   }
+
+   .info-container.ctdt .left {
+      width: 100% !important;
+   }
+
+   .info-container.ctdt img {
+      width: 100%;
+   }
+
+   .info-container.ctdt .right {
+      width: 85% !important;
+      margin: 0 auto;
+      padding: 2rem 0;
+   }
+
+   .info-container.ctdt .info-lists {
+      width: 100%;
+      margin-right: 0 !important;
+   }
 }
