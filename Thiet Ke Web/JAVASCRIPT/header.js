@@ -1,6 +1,7 @@
-const header = document.createElement('header');
+const header = document.createElement("header");
 header.innerHTML = `
 <div class="logo">
+<<<<<<< HEAD
 <a href="#">
 	<img src="../images/LogoMenu.png" alt="logo">
 </a>
@@ -79,6 +80,94 @@ header.innerHTML = `
 `;
 const styleheader = `
 
+=======
+				<a href="#">
+					<img src="../images/LogoMenu.png" alt="logo">
+				</a>
+			</div>
+
+			<nav>
+				<ul class="menu">
+					<li>
+						<span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+						<a href="../HTML/index.html">Trang Chủ</a>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-users icon-style"></i></span>
+						<a href="../HTML/GioiThieu.html">Giới Thiệu</a>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-user-graduate icon-style"></i></span>
+						<a href="../HTML/programs.html">Chương Trình Đào Tạo</a>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+						<a href="../HTML/lienhe.html">Liên Hệ</a>
+					</li>
+				</ul>
+			</nav>
+	
+			<!-- SUB NAV MENU -->
+			<div class="sub-nav">
+				<div class="sub-nav-content">
+					<span class="close-nav" onclick="hideSubNav()">
+						<i class="fa-solid fa-xmark fa-xl"></i>
+						<span>Close</span>
+					</span>
+					<!-- LOGO FOR MOBILE -->
+					<div class="logo mobile">
+						<a href="#">
+							<img src="../images/logo-white-footer.png" alt="logo">
+						</a>
+					</div>
+					<!-- END: LOGO FOR MOBILE -->
+					<ul class="sub-menu">
+						<li>
+							<a href="../HTML/index.html">
+								<span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+								 Trang Chủ
+							</a>
+						</li>
+						<li>
+							<a href="../HTML/GioiThieu.html">
+								<span><i class="fa-solid fa-users icon-style"></i></span>    
+								 Giới Thiệu
+							</a>
+						</li>
+						<li>
+							<a href="../HTML/programs.html">
+								<span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
+								 Chương Trình Đào Tạo
+							</a>
+						</li>
+						<li>
+							<a href="../HTML/lienhe.html">
+								<span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+								 Liên Hệ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-icon">
+				<a href=""> <i class="fas fa-search icon-style"></i></a>
+			</div>
+	
+			<!-- Mobile open nav icon -->
+			<span class="nav-mobile-btn" onclick="showSubNav()">
+				<i class="fa-solid fa-bars fa-xl"></i>
+			</span>
+`;
+const styleheader = `
+
+@media only screen and (min-width: 1024px) {
+	div.search-icon {
+		padding: 0.4rem 1.1rem !important;
+	}
+}
+
+
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 header {
 	position: fixed;
 	top: 0;
@@ -162,18 +251,31 @@ div.search-icon {
  
 	/* SUB NAV MENU */
 	.sub-nav {
+<<<<<<< HEAD
 	   /* display: none; */
+=======
+	   display: none;
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 	   position: absolute;
 	   background-color: var(--mainColor);
 	   box-shadow: 0 0 5px rgba(0, 0, 0, 4);
 	   right: 0;
+<<<<<<< HEAD
 	   left: 100%;
+=======
+	   left: 50%;
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 	   top: 0;
 	   height: 100vh;
 	}
  
+<<<<<<< HEAD
 	.open-nav-tablet {
 	   left: 50%;
+=======
+	.open-nav {
+	   display: block;
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 	}
  
 	.sub-nav-content {
@@ -195,10 +297,22 @@ div.search-icon {
 	}
  
 	.close-nav {
+<<<<<<< HEAD
 	   padding: 1rem;
 	   text-align: center;
 	   font-size: 2.5rem;
 	   color: #fff;
+=======
+	   display: block;
+	   padding: 1rem;
+	   font-size: 2.5rem;
+	   color: #fff;
+	   background: #232e53;
+	}
+ 
+	.close-nav i {
+	   font-size: 1.8rem;
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 	}
  
 	.close-nav:hover {
@@ -288,10 +402,22 @@ div.search-icon {
 	}
  
 	.close-nav {
+<<<<<<< HEAD
 	   padding: 1rem;
 	   text-align: center;
 	   font-size: 2.5rem;
 	   color: #fff;
+=======
+	   display: block;
+	   padding: 1rem;
+	   font-size: 2.5rem;
+	   color: #fff;
+	   background: #232e53;
+	}
+ 
+	.close-nav i {
+	   font-size: 1.8rem;
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 	}
  
 	.close-nav:hover {
@@ -311,8 +437,14 @@ div.search-icon {
  
 	/* END SUB NAV MENU */
 }
+<<<<<<< HEAD
   `
 
+=======
+  `;
+
+// Open/Close Sub Nav Menu
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464
 function showSubNav() {
 	var spanElement = document.querySelector(".sub-nav");
 	spanElement.classList.add("open-nav");
@@ -322,6 +454,19 @@ function hideSubNav() {
 	var spanElement = document.querySelector(".sub-nav");
 	spanElement.classList.remove("open-nav");
 }
+<<<<<<< HEAD
 document.head.insertAdjacentHTML('beforeend', `<style>${styleheader}</style>`);
 header.classList.add('your-header-class');
 document.body.append(header);
+=======
+
+// Load lại khi thay đổi k.thước @media
+window.addEventListener('resize', function() {
+	location.reload();
+});
+
+
+document.head.insertAdjacentHTML("beforeend", `<style>${styleheader}</style>`);
+header.classList.add("your-header-class");
+document.body.append(header);
+>>>>>>> b51f0180be773a160657ce0228e4bbfc77bc6464

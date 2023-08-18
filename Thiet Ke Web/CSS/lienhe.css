@@ -23,6 +23,10 @@ body {
     color: #333;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     /*bỏ gạch chân*/
@@ -39,6 +43,72 @@ a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 /* header styles */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--mainColor);
+	height: 76px;
+	display: flex;
+    justify-content: space-between;
+	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.4);
+	z-index: 99;
+}
+
+div.logo {
+	height: 100%;
+}
+
+div.logo  img {
+	height: 100%;
+}
+
+nav {
+	display: flex;
+    align-items: center;
+}
+
+ul.menu {
+	display: flex;
+}
+
+ul.menu li {
+	display: block;
+	margin-right: 1.6rem;
+	font-size: 1.4rem;
+}
+
+/* TEST OPEN NAV */
+.open-nav {
+	display: block;
+ }
+
+
+
+/* Bi thay doi height cua ul khi hover cac li => problem ? */
+/* ul.menu li:hover {
+	border-bottom: 2px solid #fff;
+} */
+
+i.icon-style {
+	color: #fff;
+}
+
+ul.menu > li > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+div.search-icon {
+	padding: 1rem 0.8rem;
+} 
+
+.search-icon > a > i {
+	font-size: 1.5rem;
+    color: #fff;
+	margin-top: 1.5rem;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* banner styles */
@@ -259,14 +329,18 @@ input[type="email"]:valid+label {
     font-style: italic;
     font-size: 0.9rem;
     margin-top: 5px;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .section-ques .ques-item .ans.show {
     /* display: block; */
+    background-color: #d8efff;
     max-height: 200px;
     opacity: 1;
+    padding: 1rem;
     margin-bottom: 1rem;
+    margin-top: 0;
+    border-radius: 3px 3px 5px 5px
 }
 
 .section-ques .ques-item {
@@ -322,7 +396,7 @@ input[type="email"]:valid+label {
 
 .it-major-header h2 {
     color: var(--fontColer);
-    font-size: 68px;
+    font-size: 2rem;
     letter-spacing: 1px;
     text-shadow: 0 1px black;
 }
@@ -336,25 +410,32 @@ input[type="email"]:valid+label {
 }
 
 /* mấy cái đia chỉ */
-.container-adress {
+.container-address {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 10%;
-    /*trên dưới 0 , trái phải auto */
-    padding: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
 }
 
-.adress-items {
-    width: 47%;
-    margin-bottom: 15px;
-    margin-top: 5px;
+.address-item {
+    width: 48%;
 }
 
-.adress-item {
-    
-    padding: 20px;
-    border-radius: 5px;
+.address-item h3 {
+    font-size: 1.2rem;
+}
+
+.address-info {
+    padding: 1rem 0;
+}
+
+.map {
+    margin-top: 1rem;
+}
+
+.map iframe {
+    width: 100%;
 }
 
 .district {
@@ -368,7 +449,65 @@ input[type="email"]:valid+label {
     font-size: 14px;
 }
 
-.map {
-    margin-top: 10px;
-    /* height: 20px; */
+/* FOOTER */
+footer {
+	background-color: var(--mainColor) !important;
+    /* background:  url("../images/Picture1.jpg"), bottom center / cover, no-repeat; */
+}
+
+.container-footer {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.container-footer span {
+	margin-left: 0.5rem;
+}
+
+.top-footer {
+	display: flex;
+    align-items: center;
+	/* padding: 6rem 0 3rem 0; */
+    border-bottom: 1px solid #757474;
+}
+
+.top-footer > div:first-child img {
+	width: 100%;
+}
+
+.top-footer-contact, .top-footer-contact a, .top-footer-contact i, .top-footer-contact span {
+	color: #fff;
+}
+
+.top-footer-contact a:hover {
+	color: #797a97;
+}
+
+.top-footer-contact p {
+	margin: 0.5rem 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.mid-footer {
+	padding: 4rem 0 2rem 0;
+	border-bottom: 1px solid #757474;
+}
+
+.mid-footer div:first-child {
+	padding-left: 18px;
+}
+
+.bottom-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.bottom-footer h3, .bottom-footer p {
+	color: #fff;
+	font-weight: normal;
 }

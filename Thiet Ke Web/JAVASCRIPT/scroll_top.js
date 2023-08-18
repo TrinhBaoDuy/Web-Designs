@@ -1,31 +1,21 @@
 $(document).ready(function() {
-	// $("#top").hide()
-	// $(window).scroll(function() {
-	// 	if ($(this).scrollTop() >= 550)
-	// 		$("#top").show("slow")
-	// 	else {
-	// 		$("#top").hide("slow")
-	// 	}
-	// })
+	$("#top").hide()
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 550)
+			$("#top").show("slow")
+		else {
+			$("#top").hide("slow")
+		}
+	})
 
-	// $("#top").click(function() {
-	// 	$("html, body").animate({
-	// 		scrollTop: 0
-	// 	}, 1000)
-	// })
-
-	// Open/Close Sub Nav Menu
-	// $(".nav-mobile-btn").click(function() {
-	// 	$(".sub-nav").addClass(".open-nav");
-	// 	$(".sub-nav.open-nav").show();
-	// })
-
-	
-
-	// btnMenu = document.querySelector(".nav-mobile-btn");
-	// btnMenu.addEventListener("click", showSubNav);
+	$("#top").click(function() {
+		$("html, body").animate({
+			scrollTop: 0
+		}, 1000)
+	})
 })
 
+// Open/Close Sub Nav Menu
 function showSubNav() {
 	var spanElement = document.querySelector(".sub-nav");
 	spanElement.classList.add("open-nav");
@@ -35,3 +25,8 @@ function hideSubNav() {
 	var spanElement = document.querySelector(".sub-nav");
 	spanElement.classList.remove("open-nav");
 }
+
+// Load lại khi thay đổi k.thước @media
+window.addEventListener('resize', function() {
+	location.reload();
+});
