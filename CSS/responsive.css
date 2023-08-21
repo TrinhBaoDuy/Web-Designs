@@ -161,6 +161,23 @@ ul.socials li i {
    }
 
    /* DANG KY TABLET (DUY) */
+   .container {
+      width: 90%;
+   }
+   
+   .apply .apply-table {
+      width: 100%;
+      margin-bottom: 2rem;
+   }
+
+   .apply .apply-img {
+      width: 100%;
+   }
+
+   button[type="submit"] {
+      margin-left: 40%;
+      margin-top: 0.8rem;
+   }
 
 
    /* GO TO TOP */
@@ -1073,17 +1090,31 @@ ul.socials li i {
       width: 100%;
    }
    .container {
-      margin: 0 5px;
-      padding: 0 0px;
-      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 2rem;
    }
    .table {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1rem;
       background-color: #f7f7f7;
       font-family: Arial, sans-serif;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      margin: 0 0px;
-      padding: 0 10px;
+   }
+
+   .table h3 {
+      font-size: 1.2rem;
+   }
+
+   .table {
+      font-size: 0.9rem !important;
+   }
+
+   button[type="submit"] {
+      margin-left: 24%;
+      margin-top: 0.8rem;
    }
 
    /* LIEN HE SET (DUY) */

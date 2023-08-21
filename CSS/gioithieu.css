@@ -32,7 +32,6 @@ a {
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* banner styles */
 .banner {
-  /* background: url('../images/gioithieu.gif') center center / cover no-repeat; */
   background: url('../images/gthieu-banner.jpg') center center / cover no-repeat;
   margin-top: 76px;
   height: 500px;

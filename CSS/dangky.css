@@ -27,11 +27,11 @@ a {
 }
 
 .container {
-    /* max-width: 1300px; */
-    margin: 0 10%;
-    /*trên dưới 0 , trái phải auto */
-    padding: 0 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 6rem;
     display: flex;
+    justify-content: space-between;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
@@ -40,10 +40,9 @@ a {
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* banner styles */
 .banner {
-    /* background: url('images/truong-dai-hoc-mo.webp') no-repeat center center; */
-    background: #035691;
-    background-size: cover;
+    background: url('../images/gthieu-banner.jpg') center center / cover no-repeat;
     height: 500px;
+    margin-top: 76px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,40 +138,38 @@ div.text {
 }
 
 .apply .apply-img {
-    width: 40%;
+    width: 48%;
 }
 
 .apply .apply-img img {
     width: 100%;
-    margin-top: 50px;
-    /* animation: nhunnhay 0.5s infinite; */
-    cursor: pointer;
 }
 
 .apply .apply-table {
-    width: 60%;
+    width: 48%;
 }
 
 .apply h1 {
+    font-size: 1.2rem;
     text-align: center;
-    margin: 50px 10% 0 10%;
     background-color: var(--fontColer);
     border-radius: 20px 20px 0 0;
     color: #fff;
-    padding: 2%;
-    max-width: 600px;
+    padding: 1rem;
+    width: 100%;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .apply form {
-    /* margin: 50px auto; */
-    padding: 0 20px;
-    max-width: 600px;
+    padding: 2rem;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin: 0 10%;
-    /* text-align: center; */
+}
+
+form:first-child {
+    text-align: center !important;
 }
 
 label {
@@ -181,9 +178,6 @@ label {
     font-weight: bold;
 }
 
-/* label:first-child{
-    margin-top: 10px;
-} */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -273,7 +267,6 @@ input[type="file"]:valid {
 /* Thiết lập cho các trường nhập tệp chưa được chọn */
 input[type="file"]:invalid {
     border-color: red;
-    /* Đổi màu đường viền thành đỏ */
 }
 
 button[type="submit"] {
@@ -284,9 +277,10 @@ button[type="submit"] {
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
-    animation: nhunnhay 0.5s infinite;
+    animation: nhunnhay 2.8s infinite;
     cursor: pointer;
-    width: 34%;
+    width: 8rem;
+    margin-left: 35%;
 }
 
 button[type="submit"]:hover {
@@ -398,18 +392,19 @@ button[type="submit"]:hover {
   }
  /* bảng điểm */
  .table {
-    /* max-width: 800px; */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: #f7f7f7;
     font-family: Arial, sans-serif;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 0 10%;
-    padding: 0 20px;
+    padding: 1.6rem;
   }
   .table h3{
     text-align: center;
-    margin-top: 10%;
-    padding-top: 2%;
+    font-size: 1.6rem;
   }
   
   table {
@@ -440,10 +435,6 @@ button[type="submit"]:hover {
   
   tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #ddd;
   }
   /* --------------------------------------------------------------- */
   div#content div.courses {
