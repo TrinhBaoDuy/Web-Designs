@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+:root {
+  --fontColer: #094183;
+  ;
+}
+
+a {
+  text-decoration: none;
+  /*bỏ gạch chân*/
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* header styles */
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* banner styles */
+.banner {
+  /* background: url('../images/gioithieu.gif') center center / cover no-repeat; */
+  background: url('../images/gthieu-banner.jpg') center center / cover no-repeat;
+  margin-top: 76px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-text {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 3px 3px 6px #07135a;
+}
+
+.banner-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--fontColer);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--fontColer);
+  border: 1px solidvar(--fontColer);
+  text-shadow: none;
+}
+
+/* feature styles */
+.feature {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+.feature-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-box h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: inline-block;
+  background-color: var(--fontColer);
+  color: #fff;
+  padding: 20px;
+  border-radius: 40%;
+  margin-bottom: 30px;
+}
+
+/* .icon img {
+    height: 30px;
+  } */
+div.text {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: none;
+  border: 3px solid #333;
+  box-shadow: 2px 2px 5px #07135a;
+  border-radius: 10%;
+  font-size: 15px;
+  padding: 30px;
+}
+
+.feature-box p {
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* INTRODUCTION */
+.introduce {
+  padding: 2.6rem 0;
+}
+
+.introduce .topic {
+  width: 39%;
+  text-align: center;
+}
+
+.introduce .topic h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.introduce .info {
+  width: 60%;
+  padding: 1rem 0px;
+}
+
+.introduce .info p {
+  margin-bottom: 20px;
+}
+
+/* Passion + Video */
+.section-join__left {
+  margin-left: 80px;
+  padding: 48px 20px;
+}
+
+.passion {
+  background-color: var(--fontColer);
+}
+
+.passion-center {
+  margin: 0 auto;
+  background-color: var(--fontColer);
+  display: flex;
+  padding: 7rem 20px;
+}
+
+.passion-content {
+  width: 40%;
+}
+
+.passion-content .passion-h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.passion-content .passion-p {
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* SỨ MỆNH */
+.prize-container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.prize-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3.4rem 0;
+}
+
+.prizes {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.prize-item {
+  width: 30.6666667%;
+  margin-bottom: 3rem;
+}
+
+.prize-item h4 {
+  font-size: 1.125rem;
+  margin: 0.6rem 0;
+}
+
+.prize-item span i {
+  font-size: 2rem;
+}
+
+/* Curious */
+.curious-container {
+  background-color: #464ac9;
+}
+
+.curious {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.curious h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.curious p  {
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+}
+
+.curious a {
+  display: inline-block;
+    background-color: #ed4b53;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.curious a:hover {
+  background-color: #88171c;
+}
+
+/* PRIZES */
+.prizes-bg {
+  background-color: #f2f5ff;
+}
+
+.prizes.prizes-list {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.prizes.prizes-list .title {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-bottom: 2rem;
+}
+
+.prizes.prizes-list h3 {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.prizes .prize .info {
+  width: 50%;
+  padding: 0 5% 10% 5%;
+}
+
+.prizes .prize .info p {
+  margin-top: 2%;
+}
+
+.prizes .prize .prize-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.prizes .prize .container .prize-image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.prize-image img:hover {
+  transform: scale(1.1);
+}
+
+.prizes hr.thanhlon {
+  width: 60%;
+  height: 10px;
+  background-color: var(--fontColer);
+  border-radius: 10px;
+  margin: 0 20% 2% 20%;
+}
+
+
+/* GO TO TOP */
+#top {
+  position: fixed;
+  right: 2.22222222vw;
+  bottom: 1.66666667vw;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: rgba(178, 186, 187, 0.7);
+  transition: background-color ease 0.3s;
+}
+
+#top > a {
+	display: block;
+	color: #222;
+  padding: 1.1rem 1.4rem;
+  text-align: center;
+}
+
+#top span {
+	font-size: 1.6rem;
+}
+
+#top:hover {
+	background-color: rgb(178, 186, 187);
+}
+
+/* END: Go to top */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* footer styles */

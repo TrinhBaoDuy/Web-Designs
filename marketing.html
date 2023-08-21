@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open University - HCMC</title>
+    <link rel="stylesheet" href="CSS/marketing.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JAVASCRIPT/scroll_top.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="images/LogoMenu.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                    <a href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-users icon-style"></i></span>
+                    <a href="GioiThieu.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-user-graduate icon-style"></i></span>
+                    <a href="programs.html">Chương Trình Đào Tạo</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                    <a href="lienhe.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SUB NAV MENU -->
+        <div class="sub-nav">
+            <div class="sub-nav-content">
+                <span class="close-nav" onclick="hideSubNav()">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                    <span>Close</span>
+                </span>
+                
+                <ul class="sub-menu">
+                    <li>
+                        <a href="index.html">
+                            <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                             Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="GioiThieu.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Giới Thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs.html">
+                            <span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
+                             Chương Trình Đào Tạo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lienhe.html">
+                            <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                             Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Follow us -->
+            <div class="follow-container">
+                <div class="follow">
+                    <h3>Follow Us &#128147;</h3>
+                    <ul class="socials flex">
+                        <li class="social-item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END: Follow us -->
+        </div>
+        <div class="search-icon">
+            <a href=""> <i class="fas fa-search icon-style"></i></a>
+        </div>
+
+        <!-- Mobile open nav icon -->
+        <span class="nav-mobile-btn" onclick="showSubNav()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+    </header>
+
+    <div id="header-major-container">
+        <div class="img-intro">
+            <img src="images/marketing-head.jpg" alt="code-img">
+        </div>
+        <div class="it-major-header wow animate__animated animate__fadeInUp">
+            <h2>Marketing</h2>
+            <p>Marketing là chìa khóa quan trọng cho doanh nghiệp trong môi trường cạnh tranh toàn cầu và công nghệ 4.0, <br> mang đến nhiều cơ hội việc làm và thăng tiến cho những người trẻ đam mê lĩnh vực này.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="section-join">
+            <div class="section-join__left col-70per wow animate__animated animate__fadeInUp">
+                <h2 class="heading-section-join">Giới thiệu chung</h2>
+                <p>
+                    Với định hướng ứng dụng, chương trình đào tạo ngành Marketing sẽ cung cấp cho người học kiến thức kinh doanh tích hợp, khả năng hoạch định chiến lược marketing, kỹ năng hội nhập toàn cầu, tư duy sáng tạo, tác phong chuyên nghiệp…, tạo điều kiện cho người học có cơ hội phát triển tối ưu trong lĩnh vực marketing vốn rất hấp dẫn nhưng cũng đầy thử thách.
+                </p>
+                
+                <div class="info-major-items flex">
+                    <div class="info-major-item">
+                        <h3>Mã ngành</h3>
+                        <p>7340115</p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Thời gian đào tạo</h3>
+                        <p>4 năm</p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Tổ hợp môn</h3>
+                        <p>A00: Toán – Lý – Hóa</p>
+                        <p>A01: Toán – Lý – Tiếng Anh</p>
+                        <p>C01: Toán – Văn – Lý</p>
+                        <p>D01: Toán – Văn – Tiếng Anh </p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Văn bằng</h3>
+                        <p>Cử nhân Marketing </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-join__right col-30per wow animate__animated animate__fadeInUp">
+                <img src="images/marketing1.jpg" alt="img-desk">
+            </div>
+        </div>
+
+        <div class="special-major-container">
+            <div class="special-major wow animate__animated animate__fadeInUp">
+                <div class="special-header">
+                    <h2>Đặc điểm nổi bật của chương trình đào tạo</h2>
+                    <p>Ngành Marketing tại trường Đại học Mở được coi là một ngành học đặc biệt và có chất lượng đào tạo được công nhận từ những ngày đầu thành lập trường, thu hút ngày càng nhiều sinh viên tham gia.</p>
+                </div>
+                <div class="special-contents flex">
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Uy tín trong 25 năm qua</h3>
+                        <p>Chương trình thường xuyên được rà soát và cập nhật theo xu hướng của thị trường và nhu cầu của nhà tuyển dụng. Được bảo chứng chất lượng bởi rất nhiều cựu sinh viên đang giữ các vị trí quan trọng trong các doanh nghiệp hàng đầu cả nước.</p>
+                    </div>
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Marketing Generator</h3>
+                        <p>Khoa Thương mại tự hào là đơn vị chủ quản của cuộc thi Marketing Generator với quy mô toàn quốc. Đây là sân chơi hấp dẫn, thu hút hàng ngàn sinh viên tài năng và đam mê marketing đến từ các trường đại học lớn như Đại học Kinh tế TPHCM, Đại học Tôn Đức Thắng, Đại học RMIT.v.v..</p>
+                    </div>
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Học thông qua trải nghiệm</h3>
+                        <p>Tăng tối đa trải nghiệm thực tế của người học thông qua các môn học thực hành, các dự án marketing, các kỳ thực tập… với sự đồng hành của các doanh nghiệp. Các hội thảo được trình bày bởi chuyên gia, các hoạt động ngoại khóa sôi nổi… cũng là điểm nhấn đặc biệt của chương trình.</p>
+                    </div>
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Nhiều lựa chọn chuyên sâu</h3>
+                        <p>Người học có thể tùy chọn hướng chuyên sâu phù hơp với năng lực và sở thích cá nhân cũng như yêu cầu của thị trường, ví dụ như: Digital marketing, Quản trị sự kiện, Quản trị marketing, Quản trị thương hiệu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="section-container">
+            <div class="section-output-ability flex">
+                <div class="section-left col-half wow animate__animated animate__fadeInUp">
+                    <h2>Năng lực đầu ra</h2>
+                    <p>Sinh viên tốt nghiệp chuyên ngành Marketing sau khi ra trường sẽ:</p>
+                    <div class="pc-room">
+                        <img src="images/PC-room.webp" alt="PC-room">
+                    </div>
+                </div>
+                <div class="section-right col-half wow animate__animated animate__fadeInUp">
+                    <div class="section-content">
+                        <h3>Kiến thức kinh doanh tích hợp</h3>
+                        <p>Vận dụng các kiến thức về hoạt động kinh tế nhằm giải thích sự tác động của các lĩnh vực liên quan đến hoạt động kinh doanh và marketing của doanh nghiệp.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Kiến thức chuyên ngành Marketing</h3>
+                        <p>Vận dụng các kiến thức của ngành marketing về khách hàng, quản trị và các công cụ marketing nhằm lập kế hoạch, tổ chức các chiến lược marketing của doanh nghiệp.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Kiến thức chuyên sâu Marketing</h3>
+                        <p>Phân tích các chiến lược marketing dựa trên các kiến thức của các chuyên sâu marketing kỹ thuật số, quản trị sự kiện, quản trị marketing, quản trị thương hiệu, nhằm đưa ra các giải pháp nâng cao hiệu quả hoạt động marketing cho doanh nghiệp.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Kỹ năng hoạch định chiến lược marketing</h3>
+                        <p>Sử dụng thành thạo khả năng tổ chức lập kế hoạch, triển khai, kiểm tra, đánh giá và phát triển các giải pháp nâng cao hiệu quả hoạt động marketing của các doanh nghiệp và tổ chức.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-container">
+            <div class="section-output-ability flex">
+                <div class="section-left col-half wow animate__animated animate__fadeInUp">
+                    <h2>Phương pháp học tập, giảng dạy và đánh giá</h2>
+                    <p>Để đạt hiệu quả giảng dạy tốt nhất, Khoa Marketing luôn không ngừng cải tiến các phương pháp học tập, giảng dạy của mình.</p>
+                    <div class="pc-room">
+                        <img src="images/markating-out.jpg" alt="PC-room">
+                    </div>
+                </div>
+                <div class="section-right contents-second col-half wow animate__animated animate__fadeInUp">
+                    <div class="section-content">
+                        <h3>Phương pháp học tập</h3>
+                        <p>Người học sẽ được học tập tại lớp (70% thời lượng) và học online trên trang e-learning của trường (30% thời lượng). Đây là hướng học tập hiệu quả.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Phương pháp giảng dạy</h3>
+                        <p>Triết lý Giáo dục Khai phóng, cung cấp cho người học kỹ năng và tư duy khám phá, định vị bản thân, thích ứng với tiêu chuẩn mới của bối cảnh hội nhập toàn cầu.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Phương pháp đánh giá</h3>
+                        <p>Sinh viên được đánh giá bằng nhiều hình thức, chú trọng vào khả năng kết hợp lý thuyết và thực tiễn. Ngoài ra các hệ thống kiểm tra và đánh giá cũng được áp dụng linh hoạt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carreer-container">
+            <div class="carreer-section wow animate__animated animate__fadeInUp">
+                <div class="carreer-heading flex">
+                    <h2 class="carreer-header col-half">Triển vọng nghề nghiệp</h2>
+                    <span class="carreer-para col-half">Sinh viên tốt nghiệp ngành Marketing có thể làm việc tại các vị trí liên quan đến lĩnh vực marketing trong mọi loại hình doanh nghiệp trong và ngoài nước, các văn phòng đại diện, các cơ quan quản lý nhà nước về kinh tế và các tổ chức kinh doanh khác:</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Chuyên viên marketing, kinh doanh</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Truyền thông</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Quan hệ công chúng</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Tổ chức sự kiện</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Nghiên cứu thị trường</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Chăm sóc khách hàng</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Quản lý thương hiệu</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Digital marketing</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Sáng tạo nội dung</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Khởi nghiệp trong nhiều lĩnh vực khác nhau</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="quote-container">
+            <div class="quote-left col-half wow animate__animated animate__fadeInUp">
+                <h2>"Học tập là hạt giống của kiến thức, kiến thức là hạt giống của hạnh phúc."</h2>
+                <p>- Ngạn ngữ Gruzia</p>
+                <a href="DangKy.html" target="_blank" class="register-btn-major">
+                    Đăng ký ngay
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                </a>
+            </div>
+            <div class="quote-right col-half wow animate__animated animate__fadeInUp">
+                <img src="images/marketing-quote.jpg" alt="info-img">
+            </div>
+        </div>
+
+        <div id="partner-container">
+            <div class="partner-company wow animate__animated animate__fadeInUp">
+                <h2>Đối tác chiến lược</h2>
+                <ul class="partner-companies-logo flex">
+                    <li class="company-logo">
+                        <img src="images/tma-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/KMS-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/dek-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/nash_tech.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Sphacylogo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Hitachi_logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Mercedes.svg.png" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/BMW.svg.png" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Audi_logo.svg" alt="tma-logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact-container">
+            <div class="contact-section flex">
+                <div class="contact-left col-30per wow animate__animated animate__fadeInUp">
+                    <h2>Liên hệ để nhận thông tin tư vấn</h2>
+                    <div class="contact-items">
+                        <div class="contact-item flex">
+                            <h3>Phòng Tuyển sinh và Truyền thông</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Ban Phát triển CT Đào tạo Đặc biệt</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Viện Sau Đại học</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Viện Đào tạo Quốc tế (IEI)</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Phòng Quan hệ đối ngoại</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right col-70per wow animate__animated animate__fadeInUp">
+                    <form class="contact-form">
+                        <div class="form-items flex">
+                            <div class="input-item">
+                                <input type="text" required placeholder="Họ và tên">
+                            </div>
+                            <div class="input-item">
+                                <input type="text" required placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <div class="email-form input-item">
+                            <input type="email" required placeholder="Email">
+                        </div>
+                        <div class="select-major">
+                            <p>Ngành học:</p>
+                            <select name="" id="majors" required>
+                                <option value="it">Marketing</option>
+                                <option value="it">Khoa học máy tính</option>
+                                <option value="it">Ngôn ngữ Anh</option>
+                                <option value="it">Marketing</option>
+                            </select>
+                        </div>
+
+                        <button class="contact-submit-btn" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <div class="top-footer-contact col-30per">
+                    <a href="#">
+                        <img src="images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Email</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        </span>
+                        <a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Hỗ trợ sinh viên</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone fa-beat"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Tuyển sinh</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="mid-footer flex">
+                <div class="top-footer-contact col-30per">
+                    <h4>Về chúng tôi</h4>
+                    <p>
+                        <p><a href="#">Tin tức</a></p>
+                        <p><a href="#">Sự kiện</a></p>
+                        <p><a href="#">Tuyển dụng</a></p>
+                        <p><a href="#">Đảm bảo chất lượng</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Truy cập nhanh</h4>
+                    <p>
+                        <p><a href="#">Hệ thống E-Learning</a></p>
+                        <p><a href="#">Thư viện</a></p>
+                        <p><a href="#">Đào đạo từ xa</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Follow us</h4>
+                    <p>
+                        <p>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span><a href="https://vi-vn.facebook.com/" target="_blank">Facebook</a></span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>
+                                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>
+                                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <span>
+                                <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
+                            </span>
+                        </p>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Các ngành và khối đào tạo</h4>
+                    <p>
+                        <p><a href="#">Marketing</a></p>
+                        <p><a href="#">Du lịch</a></p>
+                        <p><a href="#">Quản trị kinh doanh</a></p>
+                        <p><a href="#">Kiến trúc</a></p>
+                        <p><a href="#">Luật - Xã hội Nhân văn - Truyền thông</a></p>
+                        <p><a href="#">Thiết kế - Nghệ Thuật</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <h3>&copy; 2023 Trịnh Bảo Duy & Đàng Sỹ Tuân. All rights reserved.</h3>
+                <p>Điều khoản</p>
+                <p>Chính sách</p>
+                <p>Copyright</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GO TO TOP -->
+    <div id="top">
+        <a href="#">
+            <span class="fa fa-arrow-up"></span>
+        </a>
+    </div>
+</body>
+</html>

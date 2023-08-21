@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Mở</title>
+    <link rel="stylesheet" href="CSS/lienhe.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="JAVASCRIPT/lienhe.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+
+</head>
+
+<body onload="napcauhoi()">
+    <script src="JAVASCRIPT/header.js"></script>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-text wow animate__animated animate__fadeInUp">
+                    <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                    <p>Trường Đại học Mở là trường đại học hàng đầu tại Việt Nam với nhiều chương trình đào tạo và hoạt
+                        động
+                        nghiên cứu tích cực.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAIN -->
+        <div class="main-container__bg" >
+            <div class="main-container">
+                <main class="container">
+                    <section class="mess wow animate__animated animate__fadeInUp">
+                        <div class="help-heading">
+                            <p>Hãy cho chúng tôi biết thông tin và câu hỏi của bạn để chúng tôi có thể hỗ trợ ngay nhé! &#128521;</p>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="name" name="name" required />
+                            <label for="name">Tên của bạn:</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" required />
+                            <label for="email">Email của bạn:</label>
+                        </div>
+                        <div class="input-container">
+                            <textarea placeholder="Nội dung" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="input-container">
+                            <button id="submit-btn" onclick="guithu()">Gửi</button>
+                        </div>
+                        <div class="success-message" style="display: none;">
+                            <p>Thư của bạn đã được gửi đến trường thành công!</p>
+                            <button id="write-again" onclick="guilaithu()">Viết thư mới</button>
+                        </div>
+                    </section>
+                    <section class="container-question wow animate__animated animate__fadeInUp">
+                        <div class="section-ques">
+                            <h2>Các câu hỏi thường gặp</h2>
+                            <div id="napcauhoi" class="ques-items">
+                                <div class="ques-item">
+                                    <div class="ques">Hồ sơ sét tuyển vào trường cần những gì ?
+                                        <span class="arrow-circle">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="ans">Phiếu đăng ký xét tuyển: Đây là một biểu mẫu đơn giản cung cấp thông
+                                        tin cơ bản
+                                        về thí sinh như họ tên, địa chỉ, số điện thoại, thông tin về trường học đã tốt
+                                        nghiệp,
+                                        chuyên ngành mong muốn học, v.v.</div>
+                                </div>
+                                <div class="ques-item">
+                                    <div class="ques">Tôi nên đăng ký những môn học nào vào học kỳ đầu tiên?
+                                        <span class="arrow-circle">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="ans">Nên đăng ký những môn học cơ bản, nhưng đừng quá tải mình. Nếu bạn chưa
+                                        chắc
+                                        chắn về chuyên ngành của mình, hãy đăng ký các môn học tổng quát để có cái nhìn tổng
+                                        quan về
+                                        các lĩnh vực khác nhau.</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <div class="main-container__bg">
+            <section class="location">
+                <!-- ADDRESS + MAP -->
+                <div class="container-address">
+                    <div class="it-major-header wow animate__animated animate__fadeInUp">
+                        <h2>Chi Nhánh Liên Hệ</h2>
+                        <p>Trường có hai cơ sở chính tại các khu vực khác nhau của thành phố được trang bị đầy đủ các công nghệ
+                            hiện đại.</p>
+                    </div>
+                    <div class="address-items flex wow animate__animated animate__fadeInUp">
+                        <div class="address-item wow animate__animated animate__fadeInUp">
+                            <div class="flex" style="align-items: center;">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/oaflahpk.json"
+                                    trigger="loop"
+                                    delay="1500"
+                                    colors="primary:#4bb3fd"
+                                    style="width:50px;height:50px">
+                                </lord-icon>
+                                <h3>Cơ sở Thành phố Hồ Chí Minh</h3>
+                            </div>
+                            
+                            <div class="address-info">
+                                <ul>
+                                    <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Nguyễn Kiệm, quận 1, Thành phố Hồ Chí Minh.</li>
+                                    <li>Điện thoại: 024.7300.2266</li>
+                                    <li>Hotline: 0981.558.080 | 0971.274.545</li>
+                                </ul>
+                                <div class="map"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-item wow animate__animated animate__fadeInUp">
+                            <div class="flex" style="align-items: center;">
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/oaflahpk.json"
+                                    trigger="loop"
+                                    delay="1500"
+                                    colors="primary:#4bb3fd"
+                                    style="width:50px;height:50px">
+                                </lord-icon>
+                                <h3>Cơ sở Hà Nội</h3>
+                            </div>
+                            <div class="address-info">
+                                <ul>
+                                    <li>Địa chỉ: Tòa nhà Golden Park, Số 2 Nguyễn Kiệm, Cầu Giấy, Thành phố Hà Nội.</li>
+                                    <li>Điện thoại: 024.7300.2266</li>
+                                    <li>Hotline: 0981.558.080 | 0971.274.545</li>
+                                </ul>
+                                <div class="map"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9306899559792!2d106.67599247460375!3d10.816616158451994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690791562862!5m2!1svi!2s"
+                                        width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="JAVASCRIPT/footer.js"></script>
+</body>
+</html>

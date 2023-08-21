@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open University - HCMC</title>
+    <link rel="stylesheet" href="CSS/english-major.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JAVASCRIPT/scroll_top.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="images/LogoMenu.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li>
+                    <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                    <a href="HTML/index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-users icon-style"></i></span>
+                    <a href="HTML/GioiThieu.html">Giới Thiệu</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-user-graduate icon-style"></i></span>
+                    <a href="HTML/programs.html">Chương Trình Đào Tạo</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                    <a href="#">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- SUB NAV MENU -->
+        <div class="sub-nav">
+            <div class="sub-nav-content">
+                <span class="close-nav" onclick="hideSubNav()">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                    <span>Close</span>
+                </span>
+                
+                <ul class="sub-menu">
+                    <li>
+                        <a href="HTML/index.html">
+                            <span><i class="fa-solid fa-house home-icon icon-style"></i></span>
+                             Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="HTML/GioiThieu.html">
+                            <span><i class="fa-solid fa-users icon-style"></i></span>    
+                             Giới Thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="HTML/programs.html">
+                            <span><i class="fa-solid fa-user-graduate icon-style"></i></span>    
+                             Chương Trình Đào Tạo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="HTML/lienhe.html">
+                            <span><i class="fa-solid fa-phone-volume icon-style"></i></span>
+                             Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Follow us -->
+            <div class="follow-container">
+                <div class="follow">
+                    <h3>Follow Us &#128147;</h3>
+                    <ul class="socials flex">
+                        <li class="social-item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li class="social-item">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END: Follow us -->
+        </div>
+        <div class="search-icon">
+            <a href=""> <i class="fas fa-search icon-style"></i></a>
+        </div>
+
+        <!-- Mobile open nav icon -->
+        <span class="nav-mobile-btn" onclick="showSubNav()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+    </header>
+
+    <div id="header-major-container">
+        <div class="img-intro">
+            <img src="images/english-header.png" alt="eng-img">
+        </div>
+        <div class="it-major-header info-system wow animate__animated animate__fadeInUp">
+            <h2>Ngôn ngữ Anh</h2>
+            <p>Chương trình đào tạo cử nhân ngành Ngôn ngữ Anh có đủ kiến thức, kỹ năng, <br> phẩm chất chính trị, đạo đức, tác phong nghề nghiệp, sức khỏe tốt, <br> làm việc hiệu quả trong các lĩnh vực có sử dụng tiếng Anh nhằm đáp ứng nhu cầu xã hội và hội nhập quốc tế.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="section-join">
+            <div class="section-join__left col-70per wow animate__animated animate__fadeInUp">
+                <h2 class="heading-section-join">Giới thiệu chung</h2>
+                <p>
+                    Tiếng Anh được xem là ngôn ngữ toàn cầu, là một trong các tiêu chí về hội nhập quốc tế. Ngành Ngôn Ngữ Anh đào tạo, cung cấp nguồn nhân lực có tay nghề không chỉ về kỹ năng sử dụng ngoại ngữ mà còn kiến thức văn hoá, xã hội. Người học có thể làm việc ở nhiều vị trí thương mại, sư phạm và dịch thuật.
+                </p>
+                
+                <div class="info-major-items flex">
+                    <div class="info-major-item">
+                        <h3>Mã ngành</h3>
+                        <p>7220201</p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Thời gian đào tạo</h3>
+                        <p>4 năm</p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Tổ hợp môn</h3>
+                        <p>D08: Toán – Sinh – Tiếng Anh</p>
+                        <p>D10: Toán – Địa – Tiếng Anh</p>
+                        <p>D01: Toán – Văn – Tiếng Anh </p>
+                        <p>(Môn Tiếng Anh nhân đôi)</p>
+                    </div>
+                    <div class="info-major-item">
+                        <h3>Văn bằng</h3>
+                        <p>Cử nhân ngành Ngôn ngữ Anh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-join__right col-30per wow animate__animated animate__fadeInUp">
+                <img src="images/eng-gt.jpg" alt="img-intro">
+            </div>
+        </div>
+
+        <div class="special-major-container">
+            <div class="special-major wow animate__animated animate__fadeInUp">
+                <div class="special-header">
+                    <h2>Đặc điểm nổi bật của chương trình đào tạo</h2>
+                    <p>Cùng với triết lý giáo dục của trường, Khoa Ngoại ngữ hướng đến mục tiêu đào tạo ra những thế hệ hội đủ các yếu tố đặc trưng, đáp ứng nhu cầu cao của thị trường lao động.</p>
+                </div>
+                <div class="special-contents flex">
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Nguồn kiến thức đa đạng</h3>
+                        <p>Không chỉ đào tạo các kỹ năng nghe, nói, đọc, viết căn bản mà chương trình còn giúp người học cảm nhận sống động về lịch sử phát triển; nền văn hóa, phong cách sống, thói quen sinh hoạt của người bản xứ.</p>
+                    </div>
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Đào tạo 5 định hướng chuyên sâu</h3>
+                        <p>Sinh viên có thể chọn 01 trong 05 định hướng để học và nâng cao trình độ bao gồm: Tiếng anh Thương Mại, Tiếng anh Giảng dạy, Tiếng Anh Biên – phiên dịch, Anh - Trung thương mại, Tiếng Anh du lịch.</p>
+                    </div>
+                    <div class="special-content col-third-of-90per">
+                        <h3 class="h">Cơ sở vật chất hiện đại</h3>
+                        <p>Ngoài những tiết học lý thuyết, sinh viên sẽ được trải nghiệm những tiết thực hành thú vị, với cơ sở vật chất học tập hiện đại như phòng lab, phòng đa phương tiện, tầng lầu chỉ nói tiếng Anh,…</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="section-container">
+            <div class="section-output-ability flex">
+                <div class="section-left col-half wow animate__animated animate__fadeInUp">
+                    <h2>Năng lực đầu ra</h2>
+                    <p>Sau 4 năm được đào tạo, người tốt nghiệp ngành Ngôn ngữ Anh đạt được các chuẩn năng lực đầu ra, đáp ứng nhu cầu xã hội đang tìm kiếm.</p>
+                    <div class="pc-room">
+                        <img src="images/eng-talk.webp" alt="eng-talk">
+                    </div>
+                </div>
+                <div class="section-right col-half wow animate__animated animate__fadeInUp">
+                    <div class="section-content">
+                        <h3>Kiến thức về ngôn ngữ</h3>
+                        <p>Áp dụng các kiến thức nền tảng của ngôn ngữ vào các tình huống khác nhau, vận dụng trong cuộc sống.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Ngôn ngữ thứ hai</h3>
+                        <p>Giao tiếp bằng ngoại ngữ thứ hai ở mức độ sơ cấp hoặc sơ trung cấp.</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Hiểu về sự phát triển</h3>
+                        <p>Vận dụng các khái niệm về ngôn ngữ để giải thích các trường hợp như ngữ âm, ngữ pháp, ngữ nghĩa,...</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Phát triển đa đạng</h3>
+                        <p>Vận dụng kiến thức, phát triển trong nhiều hoàn cảnh như sư phạm, dịch thuật, thương mại, phiên dịch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-container">
+            <div class="section-output-ability flex">
+                <div class="section-left col-half wow animate__animated animate__fadeInUp">
+                    <h2>Phương pháp học tập, giảng dạy và đánh giá</h2>
+                    <p>Đọc tài liệu được giảng viên hướng dẫn trước khi vào lớp, nghe giảng, ghi chú và thảo luận, tự học,...</p>
+                    <div class="pc-room">
+                        <img src="images/eng-teach.jpg" alt="eng-teach">
+                    </div>
+                </div>
+                <div class="section-right contents-second col-half wow animate__animated animate__fadeInUp">
+                    <div class="section-content">
+                        <h3>Phương pháp học tập</h3>
+                        <p>Đọc tài liệu được giảng viên hướng dẫn trước khi vào lớp, nghe giảng, ghi chú và thảo luận, tự học,...</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Phương pháp giảng dạy</h3>
+                        <p>Thuyết giảng, tương tác, đặt vấn đề, sử dụng phương pháp lớp học đảo ngược, sửa bài tập,...</p>
+                    </div>
+                    <div class="section-content">
+                        <h3>Phương pháp đánh giá</h3>
+                        <p>Đánh giá theo thang điểm số và điểm chữ thông qua các hình thức kiểm tra đánh giá như làm bài thuyết trình, bài tập, chuyên cần, phát biểu ý kiến, thảo luận, diễn án, thi và tiểu luận.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carreer-container">
+            <div class="carreer-section wow animate__animated animate__fadeInUp">
+                <div class="carreer-heading flex">
+                    <h2 class="carreer-header col-half">Triển vọng nghề nghiệp</h2>
+                    <span class="carreer-para col-half">Sinh viên tốt nghiệp ngành Ngôn ngữ Anh với kỹ năng ngoại ngữ tốt, dễ dàng ứng tuyển những công việc như:</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Biên dịch viên tại các công ty liên doanh, doanh nghiệp nước ngoài, cơ quan ngoại giao, tổ chức kinh tế, cơ quan truyền thông,…</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Chuyên viên truyền thông trong các công ty nước ngoài như: Tổ chức sự kiện, nhân viên PR, trợ lý hay thư ký cho lãnh đạo người nước ngoài,…</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Hướng dẫn viên tại các công ty về du lịch hay nhà hàng, khách sạn lớn, tiếp xúc và làm việc với người nước ngoài.</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Giảng viên dạy tiếng Anh tại các trường đại học, cao đẳng, trung cấp nghề chuyên nghiệp.</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Giáo viên tiếng Anh tại các cấp phổ thông trung học, trung tâm ngoại ngữ.</span>
+                </div>
+                <div class="carreer-content flex">
+                    <span><i class="fa-solid fa-circle-check" style="color: #094183;"></i></span>
+                    <span class="carreer-item">Chuyên viên học vụ, đạo tạo, thiết kế xây dựng chương trình đào tạo ngôn ngữ Anh tại các đơn vị giáo dục – đào tạo.</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="quote-container">
+            <div class="quote-left col-half wow animate__animated animate__fadeInUp">
+                <h2>"The limits of my language mean the limits of my world."</h2>
+                <p>- Ludwig Wittgenstein</p>
+                <a href="HTML/DangKy.html" target="_blank" class="register-btn-major">
+                    Đăng ký ngay
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                </a>
+            </div>
+            <div class="quote-right col-half wow animate__animated animate__fadeInUp">
+                <img src="images/eng-book.jpg" alt="info-img">
+            </div>
+        </div>
+
+        <div id="partner-container">
+            <div class="partner-company wow animate__animated animate__fadeInUp">
+                <h2>Đối tác chiến lược</h2>
+                <ul class="partner-companies-logo flex">
+                    <li class="company-logo">
+                        <img src="images/tma-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/KMS-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/dek-logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/nash_tech.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Sphacylogo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Hitachi_logo.webp" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Mercedes.svg.png" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/BMW.svg.png" alt="tma-logo">
+                    </li>
+                    <li class="company-logo">
+                        <img src="images/Audi_logo.svg" alt="tma-logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact-container">
+            <div class="contact-section flex">
+                <div class="contact-left col-30per wow animate__animated animate__fadeInUp">
+                    <h2>Liên hệ để nhận thông tin tư vấn</h2>
+                    <div class="contact-items">
+                        <div class="contact-item flex">
+                            <h3>Phòng Tuyển sinh và Truyền thông</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Ban Phát triển CT Đào tạo Đặc biệt</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Viện Sau Đại học</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Viện Đào tạo Quốc tế (IEI)</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div class="contact-item flex">
+                            <h3>Phòng Quan hệ đối ngoại</h3>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right col-70per wow animate__animated animate__fadeInUp">
+                    <form class="contact-form">
+                        <div class="form-items flex">
+                            <div class="input-item">
+                                <input type="text" required placeholder="Họ và tên">
+                            </div>
+                            <div class="input-item">
+                                <input type="text" required placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <div class="email-form input-item">
+                            <input type="email" required placeholder="Email">
+                        </div>
+                        <div class="select-major">
+                            <p>Ngành học:</p>
+                            <select name="" id="majors" required>
+                                <option value="it">Công nghệ Thông tin</option>
+                                <option value="it">Khoa học máy tính</option>
+                                <option value="it">Ngôn ngữ Anh</option>
+                                <option value="it">Marketing</option>
+                            </select>
+                        </div>
+
+                        <button class="contact-submit-btn" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <div class="top-footer-contact col-30per">
+                    <a href="#">
+                        <img src="images/logo-white-footer.png" alt="logo">
+                    </a>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Email</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-envelope fa-beat-fade"></i>
+                        </span>
+                        <a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Hỗ trợ sinh viên</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone fa-beat"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Tuyển sinh</h4>
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone-volume fa-beat-fade"></i>
+                        </span>
+                        <span>0904.567.890</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="mid-footer flex">
+                <div class="top-footer-contact col-30per">
+                    <h4>Về chúng tôi</h4>
+                    <p>
+                        <p><a href="#">Tin tức</a></p>
+                        <p><a href="#">Sự kiện</a></p>
+                        <p><a href="#">Tuyển dụng</a></p>
+                        <p><a href="#">Đảm bảo chất lượng</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Truy cập nhanh</h4>
+                    <p>
+                        <p><a href="#">Hệ thống E-Learning</a></p>
+                        <p><a href="#">Thư viện</a></p>
+                        <p><a href="#">Đào đạo từ xa</a></p>
+                    </p>
+                </div>
+                <div class="top-footer-contact col-23per">
+                    <h4>Follow us</h4>
+                    <p>
+                        <p>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span><a href="https://vi-vn.facebook.com/" target="_blank">Facebook</a></span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>
+                                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>
+                                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <span>
+                                <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
+                            </span>
+                        </p>
+                    </p>
+                </div>
+
+                <div class="top-footer-contact col-23per">
+                    <h4>Các ngành và khối đào tạo</h4>
+                    <p>
+                        <p><a href="#">Công nghệ thông tin</a></p>
+                        <p><a href="#">Du lịch</a></p>
+                        <p><a href="#">Quản trị kinh doanh</a></p>
+                        <p><a href="#">Kiến trúc</a></p>
+                        <p><a href="#">Luật - Xã hội Nhân văn - Truyền thông</a></p>
+                        <p><a href="#">Thiết kế - Nghệ Thuật</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <h3>&copy; 2023 Trịnh Bảo Duy & Đàng Sỹ Tuân. All rights reserved.</h3>
+                <p>Điều khoản</p>
+                <p>Chính sách</p>
+                <p>Copyright</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GO TO TOP -->
+    <div id="top">
+        <a href="#">
+            <span class="fa fa-arrow-up"></span>
+        </a>
+    </div>
+</body>
+</html>
