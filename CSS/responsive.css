@@ -174,12 +174,12 @@ ul.socials li i {
       width: 100%;
    }
 
-   button[type="submit"] {
+   button.register-btn__dky {
       margin-left: 40%;
       margin-top: 0.8rem;
    }
 
-
+   
    /* GO TO TOP */
    #top {
       right: 4.222222vw;
@@ -1112,7 +1112,7 @@ ul.socials li i {
       font-size: 0.9rem !important;
    }
 
-   button[type="submit"] {
+   button.register-btn__dky {
       margin-left: 24%;
       margin-top: 0.8rem;
    }
